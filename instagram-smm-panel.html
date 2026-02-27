@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Instagram SMM Panel | Cheap Instagram Followers &amp; Likes Provider</title>
+  <meta name="description" content="Supercharge your Instagram growth with our premium SMM panel. Real followers, likes, and views at the best prices. Direct provider with instant delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222 47% 11%;
+      --card: 0 0% 98%;
+      --border: 214 32% 91%;
+      --muted: 210 40% 96%;
+      --muted-foreground: 215 20% 45%;
+      --accent: 221 83% 53%;
+      --accent-foreground: 0 0% 100%;
+      --ig-pink: #E1306C;
+      --ig-red: #FD1D1D;
+      --ig-pink-dark: #c0255a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ── Header ── */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid hsl(var(--border));
+    }
+    .header-inner {
+      max-width: 1280px; margin: 0 auto; padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo-link { display: flex; align-items: center; gap: 0.75rem; transition: opacity .2s; }
+    .logo-link:hover { opacity: .8; }
+    .logo-icon {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--ig-pink), var(--ig-red));
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 16px; font-weight: 800;
+    }
+    .logo-text { font-size: 1.2rem; font-weight: 700; color: hsl(var(--foreground)); }
+    .site-nav { display: none; align-items: center; gap: 2rem; }
+    @media(min-width:768px){ .site-nav { display: flex; } }
+    .site-nav a {
+      font-size: .875rem; color: hsl(var(--muted-foreground));
+      transition: color .2s; background: none; border: none; cursor: pointer;
+    }
+    .site-nav a:hover { color: hsl(var(--foreground)); }
+    .header-btns { display: flex; align-items: center; gap: .75rem; }
+    .btn-ghost {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 32px; padding: 0 12px; border-radius: 6px; font-size: .875rem;
+      font-weight: 500; border: none; background: transparent; cursor: pointer;
+      color: hsl(var(--foreground)); transition: background .2s;
+    }
+    .btn-ghost:hover { background: hsl(var(--muted)); }
+    .btn-accent {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 32px; padding: 0 12px; border-radius: 6px; font-size: .875rem;
+      font-weight: 500; border: none; cursor: pointer;
+      background: hsl(var(--accent)); color: hsl(var(--accent-foreground));
+      transition: opacity .2s;
+    }
+    .btn-accent:hover { opacity: .9; }
+
+    /* ── Sections ── */
+    section { padding: 7rem 0; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 1rem; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; margin-bottom: 1rem; line-height: 1.2; }
+    .section-sub { font-size: 1.125rem; color: hsl(var(--muted-foreground)); max-width: 640px; margin: 0 auto; }
+    .text-center { text-align: center; }
+    .mb-16 { margin-bottom: 4rem; }
+
+    /* ── Hero ── */
+    .hero {
+      padding-top: 160px; padding-bottom: 8rem;
+      background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background)) 60%, rgba(225,48,108,0.05) 100%);
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: linear-gradient(135deg, rgba(225,48,108,.1), rgba(253,29,29,.1));
+      color: var(--ig-pink); padding: .5rem 1rem; border-radius: 999px;
+      font-size: .875rem; font-weight: 500; margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.75rem); font-weight: 800;
+      margin-bottom: 1.5rem; line-height: 1.1;
+    }
+    .hero p { font-size: 1.25rem; color: hsl(var(--muted-foreground)); margin-bottom: 2rem; max-width: 640px; margin-left: auto; margin-right: auto; }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+      padding: .625rem 1.5rem; border-radius: 6px; font-size: 1rem; font-weight: 600;
+      background: hsl(var(--accent)); color: #fff; border: none; cursor: pointer; transition: opacity .2s;
+    }
+    .btn-primary:hover { opacity: .9; }
+    .btn-outline {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+      padding: .625rem 1.5rem; border-radius: 6px; font-size: 1rem; font-weight: 600;
+      background: transparent; color: hsl(var(--foreground));
+      border: 1px solid hsl(var(--border)); cursor: pointer; transition: all .2s;
+    }
+    .btn-outline:hover { background: rgba(225,48,108,.08); color: var(--ig-pink); border-color: var(--ig-pink); }
+
+    /* ── Feature Cards (Why Choose) ── */
+    .features-grid {
+      display: grid; gap: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      max-width: 1200px; margin: 0 auto;
+    }
+    .feature-card {
+      background: hsl(var(--card)); border: 2px solid hsl(var(--border));
+      border-radius: 1rem; padding: 2rem; transition: box-shadow .3s;
+    }
+    .feature-card:hover { box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+    .feat-icon-wrap {
+      width: 64px; height: 64px; border-radius: 1rem; margin-bottom: 1.5rem;
+      background: rgba(225,48,108,.1);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .feat-icon-wrap i { font-size: 1.75rem; color: hsl(var(--accent)); }
+    .feature-card h3 { font-size: 1.375rem; font-weight: 700; margin-bottom: 1rem; }
+    .feature-card p { color: hsl(var(--muted-foreground)); line-height: 1.7; }
+
+    /* ── Service Cards ── */
+    .services-bg { background: hsl(var(--muted) / 30%); }
+    .services-grid {
+      display: grid; gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      max-width: 1280px; margin: 0 auto;
+    }
+    .ig-service-card {
+      background: hsl(var(--card)); border: 2px solid hsl(var(--border));
+      border-radius: 1rem; overflow: hidden; transition: all .3s; cursor: default;
+    }
+    .ig-service-card:hover {
+      border-color: rgba(225,48,108,.5);
+      box-shadow: 0 20px 40px rgba(225,48,108,.1);
+    }
+    .ig-service-card:hover .ig-icon-wrap { transform: scale(1.1); }
+    .service-inner { padding: 2rem; }
+    .ig-icon-wrap {
+      width: 80px; height: 80px; border-radius: 1.5rem; margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, rgba(225,48,108,.2), rgba(253,29,29,.2));
+      display: flex; align-items: center; justify-content: center;
+      transition: transform .3s;
+    }
+    .ig-icon-wrap i { font-size: 2rem; color: var(--ig-pink); }
+    .ig-service-card h3 { font-size: 1.375rem; font-weight: 700; color: var(--ig-pink); margin-bottom: .75rem; }
+    .ig-service-card p { color: hsl(var(--muted-foreground)); margin-bottom: 1.5rem; line-height: 1.7; }
+    .ig-check-list { list-style: none; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: .75rem; }
+    .ig-check-list li { display: flex; align-items: center; gap: .5rem; font-size: .875rem; color: hsl(var(--muted-foreground)); }
+    .ig-check-list li i { color: var(--ig-pink); }
+    .ig-price { font-size: 1.75rem; font-weight: 700; color: var(--ig-pink); margin-bottom: 1.5rem; }
+    .ig-show-link {
+      width: 100%; text-align: center; color: var(--ig-pink); font-size: .875rem;
+      font-weight: 500; background: none; border: none; cursor: pointer; padding: .25rem 0;
+      transition: opacity .2s;
+    }
+    .ig-show-link:hover { opacity: .7; text-decoration: underline; }
+
+    /* ── How It Works ── */
+    .steps-grid {
+      display: grid; gap: 3rem;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      max-width: 1000px; margin: 0 auto;
+    }
+    .step-item { text-align: center; }
+    .step-num {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: hsl(var(--accent)); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; font-weight: 700; margin: 0 auto 1.5rem;
+    }
+    .step-item h3 { font-size: 1.375rem; font-weight: 700; margin-bottom: 1rem; }
+    .step-item p { color: hsl(var(--muted-foreground)); line-height: 1.7; }
+
+    /* ── Resellers ── */
+    .resellers-bg {
+      background: linear-gradient(135deg, rgba(225,48,108,.05) 0%, rgba(253,29,29,.05) 100%);
+    }
+    .resellers-grid {
+      display: grid; gap: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      max-width: 1200px; margin: 0 auto;
+    }
+    .reseller-card {
+      background: hsl(var(--card)); border: 2px solid rgba(225,48,108,.2);
+      border-radius: 1rem; padding: 2rem; transition: box-shadow .3s;
+    }
+    .reseller-card:hover { box-shadow: 0 10px 30px rgba(225,48,108,.08); }
+    .reseller-icon-wrap {
+      width: 64px; height: 64px; border-radius: 1rem; margin-bottom: 1.5rem;
+      background: rgba(225,48,108,.1);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .reseller-icon-wrap i { font-size: 1.75rem; color: var(--ig-pink); }
+    .reseller-card h3 { font-size: 1.375rem; font-weight: 700; color: var(--ig-pink); margin-bottom: 1rem; }
+    .reseller-card p { color: hsl(var(--muted-foreground)); line-height: 1.7; }
+
+    /* ── Testimonials ── */
+    .testimonials-grid {
+      display: grid; gap: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      max-width: 1200px; margin: 0 auto;
+    }
+    .testimonial-card {
+      background: hsl(var(--card)); border: 1px solid hsl(var(--border));
+      border-radius: 1rem; padding: 2rem; position: relative; overflow: hidden;
+    }
+    .testimonial-card::before {
+      content: ''; position: absolute; top: 0; right: 0;
+      width: 128px; height: 128px; border-radius: 0 0 0 100%;
+    }
+    .t-accent::before { background: linear-gradient(135deg, rgba(225,48,108,.1), rgba(225,48,108,.05)); }
+    .t-green::before  { background: linear-gradient(135deg, rgba(34,197,94,.1), rgba(34,197,94,.05)); }
+    .t-blue::before   { background: linear-gradient(135deg, rgba(59,130,246,.1), rgba(59,130,246,.05)); }
+    .t-purple::before { background: linear-gradient(135deg, rgba(168,85,247,.1), rgba(168,85,247,.05)); }
+    .t-orange::before { background: linear-gradient(135deg, rgba(249,115,22,.1), rgba(249,115,22,.05)); }
+    .t-pink::before   { background: linear-gradient(135deg, rgba(236,72,153,.1), rgba(236,72,153,.05)); }
+    .t-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+    .t-avatar {
+      width: 64px; height: 64px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 1.25rem; font-weight: 700; flex-shrink: 0;
+    }
+    .av-accent  { background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent)/80%)); }
+    .av-green   { background: linear-gradient(135deg, #22c55e, #16a34a); }
+    .av-blue    { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+    .av-purple  { background: linear-gradient(135deg, #a855f7, #9333ea); }
+    .av-orange  { background: linear-gradient(135deg, #f97316, #ea580c); }
+    .av-pink    { background: linear-gradient(135deg, #ec4899, #db2777); }
+    .t-name { font-weight: 700; font-size: 1.1rem; }
+    .t-stars { display: flex; gap: .25rem; color: #eab308; margin-top: .25rem; }
+    .t-stars i { font-size: .875rem; }
+    .testimonial-card blockquote { color: hsl(var(--muted-foreground)); line-height: 1.7; font-style: italic; }
+
+    /* ── FAQ ── */
+    .faq-bg { background: hsl(var(--muted) / 30%); }
+    .faq-tabs { max-width: 896px; margin: 0 auto; }
+    .tabs-bar {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      background: hsl(var(--muted)); border-radius: .5rem;
+      padding: 3px; gap: 0; margin-bottom: 2rem;
+    }
+    .tab-btn {
+      padding: .5rem .75rem; border-radius: .4rem; border: 1px solid transparent;
+      background: transparent; font-size: .9rem; font-weight: 500; cursor: pointer;
+      color: hsl(var(--muted-foreground)); transition: all .2s; text-align: center;
+    }
+    .tab-btn.active {
+      background: hsl(var(--accent)); color: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,.1);
+    }
+    .tab-panel { display: none; flex-direction: column; gap: 1rem; }
+    .tab-panel.active { display: flex; }
+    .faq-card {
+      background: hsl(var(--card)); border: 1px solid hsl(var(--border));
+      border-radius: .75rem; padding: 1.5rem;
+    }
+    .faq-card h3 { font-weight: 700; font-size: 1.05rem; margin-bottom: .75rem; }
+    .faq-card p { color: hsl(var(--muted-foreground)); font-size: .9rem; line-height: 1.7; }
+
+    /* ── Additional Resources ── */
+    .resources-grid {
+      display: grid; gap: 2rem; grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+      max-width: 1200px; margin: 0 auto;
+    }
+    .resource-link {
+      display: block; padding: 2rem; border-radius: .75rem;
+      border: 1px solid hsl(var(--border)); background: hsl(var(--card));
+      transition: all .3s;
+    }
+    .resource-link:hover { box-shadow: 0 10px 30px rgba(0,0,0,.08); border-color: hsl(var(--accent)); }
+    .resource-link:hover h3 { color: hsl(var(--accent)); }
+    .resource-icon { font-size: 2.5rem; color: hsl(var(--accent)); margin-bottom: 1rem; }
+    .resource-link h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: .75rem; transition: color .2s; }
+    .resource-link p { color: hsl(var(--muted-foreground)); font-size: .9rem; margin-bottom: 1rem; line-height: 1.6; }
+    .resource-more { display: flex; align-items: center; gap: .5rem; color: hsl(var(--accent)); font-size: .875rem; font-weight: 500; }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background)) 60%, rgba(225,48,108,.05) 100%);
+    }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .btn-cta-outline {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+      padding: .625rem 1.5rem; border-radius: 6px; font-size: 1rem; font-weight: 600;
+      background: transparent; color: hsl(var(--foreground));
+      border: 1px solid hsl(var(--border)); cursor: pointer; transition: all .2s;
+    }
+    .btn-cta-outline:hover { background: rgba(225,48,108,.08); color: var(--ig-pink); border-color: var(--ig-pink); }
+
+    /* ── Footer ── */
+    .site-footer {
+      padding: 3rem 2rem; border-top: 1px solid hsl(var(--border));
+      background: hsl(var(--background));
+    }
+    .footer-inner { max-width: 1280px; margin: 0 auto; }
+    .footer-grid {
+      display: grid; gap: 2rem; margin-bottom: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+    .footer-brand p { font-size: .875rem; color: hsl(var(--muted-foreground)); line-height: 1.6; margin-top: .5rem; }
+    .footer-col h4 { font-weight: 600; margin-bottom: 1rem; color: hsl(var(--foreground)); }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+    .footer-col ul li a { font-size: .875rem; color: hsl(var(--muted-foreground)); transition: color .2s; }
+    .footer-col ul li a:hover { color: hsl(var(--accent)); }
+    .footer-email { font-size: .875rem; color: hsl(var(--muted-foreground)); margin-bottom: 1rem; }
+    .footer-email a { transition: color .2s; }
+    .footer-email a:hover { color: hsl(var(--accent)); }
+    .social-links { display: flex; gap: 1rem; }
+    .social-links a {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: rgba(225,48,108,.1); display: flex; align-items: center; justify-content: center;
+      color: hsl(var(--foreground)); transition: all .2s;
+    }
+    .social-links a:hover { background: hsl(var(--accent)); color: #fff; }
+    .footer-bottom { padding-top: 2rem; border-top: 1px solid hsl(var(--border)); text-align: center; }
+    .footer-bottom p { font-size: .875rem; color: hsl(var(--muted-foreground)); }
+
+    /* ── Resellers Title ── */
+    .resellers-title { color: var(--ig-pink); }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo-link" href="index.html">
+        <div class="logo-icon">S</div>
+        <span class="logo-text">SMM Panel Easy</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#why-choose">Features</a>
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-btns">
+        <a href="login.html"><button class="btn-ghost">Sign In</button></a>
+        <a href="register.html"><button class="btn-accent">Get Started</button></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container text-center">
+        <div class="hero-badge">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram SMM Panel
+        </div>
+        <h1>Best Instagram SMM Panel For Real Growth</h1>
+        <p>Boost your Instagram with real followers, likes, and views. Direct provider with instant delivery and unbeatable prices.</p>
+        <div class="hero-btns">
+          <a href="register.html" class="btn-primary">Sign Up</a>
+          <a href="#services" class="btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="section-title">Why Choose Our Instagram SMM Panel</h2>
+          <p class="section-sub">We deliver real Instagram growth with services you can trust</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feat-icon-wrap"><i class="fa-solid fa-users"></i></div>
+            <h3>Real Engagement</h3>
+            <p>All followers and likes come from authentic Instagram accounts. No bots, no fake profiles, just real people.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Non-Drop</h3>
+            <p>Our Instagram services are built to last. We offer refill guarantees on most packages to keep your numbers stable.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon-wrap"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3>Direct Provider</h3>
+            <p>We own our network. No middlemen, no delays. Place your order and watch results appear within minutes.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon-wrap"><i class="fa-solid fa-tag"></i></div>
+            <h3>Lowest Prices</h3>
+            <p>Premium Instagram growth shouldn't cost a fortune. We offer the best rates in the industry without compromising quality.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon-wrap"><i class="fa-solid fa-headset"></i></div>
+            <h3>24/7 Support</h3>
+            <p>Our support team is always available to help you. Questions, issues, or guidance — we're here whenever you need us.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon-wrap"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Instant Start</h3>
+            <p>No waiting around. Most Instagram orders start processing immediately and show results within 5-10 minutes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services-bg">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="section-title">Our Instagram Services</h2>
+          <p class="section-sub">Complete Instagram growth solutions at industry-low prices</p>
+        </div>
+        <div class="services-grid">
+
+          <!-- Followers -->
+          <div class="ig-service-card">
+            <div class="service-inner">
+              <div class="ig-icon-wrap"><i class="fa-solid fa-user-plus"></i></div>
+              <h3>Instagram Followers</h3>
+              <p>Grow your Instagram audience with real followers who engage with your content and help boost your reach.</p>
+              <ul class="ig-check-list">
+                <li><i class="fa-solid fa-check"></i><span>Real active accounts</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Refill guarantee available</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Instant to gradual delivery</span></li>
+              </ul>
+              <p class="ig-price">From $0.35/1K</p>
+              <button class="ig-show-link">Show Services</button>
+            </div>
+          </div>
+
+          <!-- Likes -->
+          <div class="ig-service-card">
+            <div class="service-inner">
+              <div class="ig-icon-wrap"><i class="fa-solid fa-heart"></i></div>
+              <h3>Instagram Likes</h3>
+              <p>Boost your posts with authentic likes that increase visibility and attract more organic engagement.</p>
+              <ul class="ig-check-list">
+                <li><i class="fa-solid fa-check"></i><span>Instant delivery available</span></li>
+                <li><i class="fa-solid fa-check"></i><span>High retention rate</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Auto-like option</span></li>
+              </ul>
+              <p class="ig-price">From $0.20/1K</p>
+              <button class="ig-show-link">Show Services</button>
+            </div>
+          </div>
+
+          <!-- Views -->
+          <div class="ig-service-card">
+            <div class="service-inner">
+              <div class="ig-icon-wrap"><i class="fa-solid fa-eye"></i></div>
+              <h3>Instagram Views</h3>
+              <p>Increase video visibility with real views that help you reach the explore page and gain more followers.</p>
+              <ul class="ig-check-list">
+                <li><i class="fa-solid fa-check"></i><span>Massive bulk orders</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Lightning fast start</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Cheapest on market</span></li>
+              </ul>
+              <p class="ig-price">From $0.15/1K</p>
+              <button class="ig-show-link">Show Services</button>
+            </div>
+          </div>
+
+          <!-- Comments -->
+          <div class="ig-service-card">
+            <div class="service-inner">
+              <div class="ig-icon-wrap"><i class="fa-solid fa-comment"></i></div>
+              <h3>Instagram Comments</h3>
+              <p>Add genuine comments to your posts that spark conversations and make your content look more engaging.</p>
+              <ul class="ig-check-list">
+                <li><i class="fa-solid fa-check"></i><span>Custom text options</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Random or specific</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Real accounts only</span></li>
+              </ul>
+              <p class="ig-price">From $2.50/1K</p>
+              <button class="ig-show-link">Show Services</button>
+            </div>
+          </div>
+
+          <!-- Reels Views -->
+          <div class="ig-service-card">
+            <div class="service-inner">
+              <div class="ig-icon-wrap"><i class="fa-solid fa-film"></i></div>
+              <h3>Instagram Reels Views</h3>
+              <p>Skyrocket your Reels with massive view counts that push your content to the explore page and beyond.</p>
+              <ul class="ig-check-list">
+                <li><i class="fa-solid fa-check"></i><span>Explore page boost</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Viral potential increase</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Super fast delivery</span></li>
+              </ul>
+              <p class="ig-price">From $0.12/1K</p>
+              <button class="ig-show-link">Show Services</button>
+            </div>
+          </div>
+
+          <!-- Story Views -->
+          <div class="ig-service-card">
+            <div class="service-inner">
+              <div class="ig-icon-wrap"><i class="fa-solid fa-circle-play"></i></div>
+              <h3>Instagram Story Views</h3>
+              <p>Boost your Instagram story views to increase reach and show your content to more people in their feeds.</p>
+              <ul class="ig-check-list">
+                <li><i class="fa-solid fa-check"></i><span>Real user views</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Instant start time</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Safe for all accounts</span></li>
+              </ul>
+              <p class="ig-price">From $0.25/1K</p>
+              <button class="ig-show-link">Show Services</button>
+            </div>
+          </div>
+
+          <!-- Saves -->
+          <div class="ig-service-card">
+            <div class="service-inner">
+              <div class="ig-icon-wrap"><i class="fa-solid fa-bookmark"></i></div>
+              <h3>Instagram Saves</h3>
+              <p>Instagram prioritizes saved content. More saves mean more reach as the algorithm sees your posts as valuable.</p>
+              <ul class="ig-check-list">
+                <li><i class="fa-solid fa-check"></i><span>Algorithm boost</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Increase post value</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Real user engagement</span></li>
+              </ul>
+              <p class="ig-price">From $1.50/1K</p>
+              <button class="ig-show-link">Show Services</button>
+            </div>
+          </div>
+
+          <!-- Shares -->
+          <div class="ig-service-card">
+            <div class="service-inner">
+              <div class="ig-icon-wrap"><i class="fa-solid fa-share"></i></div>
+              <h3>Instagram Shares</h3>
+              <p>Shares spread your content to new audiences. They signal quality to Instagram and amplify your reach exponentially.</p>
+              <ul class="ig-check-list">
+                <li><i class="fa-solid fa-check"></i><span>Viral potential</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Reach new audiences</span></li>
+                <li><i class="fa-solid fa-check"></i><span>Powerful engagement</span></li>
+              </ul>
+              <p class="ig-price">From $2.00/1K</p>
+              <button class="ig-show-link">Show Services</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-sub">Start growing your Instagram in three simple steps</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <h3>Create Account</h3>
+            <p>Sign up for free in under 30 seconds. No credit card required to start browsing our services.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <h3>Add Funds</h3>
+            <p>Add funds using any payment method. Start with just $5 to test our Instagram services.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <h3>Place Order</h3>
+            <p>Choose your service, paste your Instagram link, and watch the results arrive within minutes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resellers -->
+    <section class="resellers-bg">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="section-title resellers-title">Best Instagram SMM Panel For Resellers</h2>
+          <p class="section-sub">Everything you need to run a successful Instagram SMM reselling business</p>
+        </div>
+        <div class="resellers-grid">
+          <div class="reseller-card">
+            <div class="reseller-icon-wrap"><i class="fa-solid fa-code"></i></div>
+            <h3>Easy API</h3>
+            <p>Integrate our Instagram services into your platform with our simple API. Full documentation and support included.</p>
+          </div>
+          <div class="reseller-card">
+            <div class="reseller-icon-wrap"><i class="fa-solid fa-users-gear"></i></div>
+            <h3>Child Panel</h3>
+            <p>Create unlimited child panels for your clients. White-label solution with your branding and custom domain.</p>
+          </div>
+          <div class="reseller-card">
+            <div class="reseller-icon-wrap"><i class="fa-solid fa-sliders"></i></div>
+            <h3>Custom Rates</h3>
+            <p>Set your own prices for all Instagram services. Control your profit margins and stay competitive in your market.</p>
+          </div>
+          <div class="reseller-card">
+            <div class="reseller-icon-wrap"><i class="fa-solid fa-headset"></i></div>
+            <h3>Priority Support</h3>
+            <p>Resellers get priority support via Telegram and email. Fast response times to keep your business running smooth.</p>
+          </div>
+          <div class="reseller-card">
+            <div class="reseller-icon-wrap"><i class="fa-solid fa-tag"></i></div>
+            <h3>Lowest Rates</h3>
+            <p>Get the cheapest Instagram SMM panel rates for resellers. Higher profit margins with our bulk pricing discounts.</p>
+          </div>
+          <div class="reseller-card">
+            <div class="reseller-icon-wrap"><i class="fa-solid fa-server"></i></div>
+            <h3>Direct Provider</h3>
+            <p>We own our Instagram service network. No third-party delays or quality issues. Direct provider reliability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-sub">Real reviews from real Instagram growth success stories</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card t-accent">
+            <div class="t-header">
+              <div class="t-avatar av-accent">S</div>
+              <div>
+                <p class="t-name">Sarah</p>
+                <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <blockquote>"My photography account went from 800 followers to 15K in two months. The engagement is real and my posts actually get seen now. Best investment I made."</blockquote>
+          </div>
+          <div class="testimonial-card t-green">
+            <div class="t-header">
+              <div class="t-avatar av-green">M</div>
+              <div>
+                <p class="t-name">Marcus</p>
+                <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <blockquote>"I manage 12 client accounts and this panel saves me hours every day. Fast delivery, real followers, and the API makes bulk orders super easy."</blockquote>
+          </div>
+          <div class="testimonial-card t-blue">
+            <div class="t-header">
+              <div class="t-avatar av-blue">P</div>
+              <div>
+                <p class="t-name">Priya</p>
+                <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <blockquote>"Started my fashion boutique Instagram from zero. Within 3 weeks I hit 5K followers. Now I get orders directly from Instagram DMs every single day."</blockquote>
+          </div>
+          <div class="testimonial-card t-purple">
+            <div class="t-header">
+              <div class="t-avatar av-purple">J</div>
+              <div>
+                <p class="t-name">Jake</p>
+                <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <blockquote>"The Reels views are insane. My first order hit 100K views in under 6 hours. That reel went viral organically after that and got me 2K new followers."</blockquote>
+          </div>
+          <div class="testimonial-card t-orange">
+            <div class="t-header">
+              <div class="t-avatar av-orange">L</div>
+              <div>
+                <p class="t-name">Lisa</p>
+                <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <blockquote>"Finally found a panel that actually delivers quality. The followers stick around and some even comment on my posts naturally. This is legit."</blockquote>
+          </div>
+          <div class="testimonial-card t-pink">
+            <div class="t-header">
+              <div class="t-avatar av-pink">D</div>
+              <div>
+                <p class="t-name">David</p>
+                <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <blockquote>"I run an SMM agency and this panel is my secret weapon. The API integration was smooth and my clients love the results. Highly recommend."</blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-bg">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-sub">Everything you need to know about our Instagram SMM panel</p>
+        </div>
+        <div class="faq-tabs">
+          <div class="tabs-bar" role="tablist">
+            <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('general', this)">General</button>
+            <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('instagram', this)">Instagram</button>
+            <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('orders', this)">Orders</button>
+            <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('reseller', this)">Reseller</button>
+          </div>
+
+          <!-- General -->
+          <div id="tab-general" class="tab-panel active" role="tabpanel">
+            <div class="faq-card">
+              <h3>Is this Instagram SMM panel safe to use?</h3>
+              <p>Yes, our Instagram panel is completely safe. We use real accounts and natural delivery patterns that comply with Instagram guidelines. Millions of users trust us for their growth.</p>
+            </div>
+            <div class="faq-card">
+              <h3>How fast will I see results on my Instagram?</h3>
+              <p>Most Instagram orders start within 5-10 minutes. Delivery speed depends on the service and quantity. Smaller orders complete faster, while larger ones may take a few hours to maintain natural appearance.</p>
+            </div>
+            <div class="faq-card">
+              <h3>Do you accept cryptocurrency payments?</h3>
+              <p>Yes, we accept Bitcoin, Ethereum, and other major cryptocurrencies. We also support credit cards, PayPal, and regional payment methods like UPI and PIX.</p>
+            </div>
+            <div class="faq-card">
+              <h3>What makes your Instagram panel different?</h3>
+              <p>We're a direct provider, not a reseller. This means faster delivery, better quality, and lower prices. Our Instagram services come straight from our network with no middlemen.</p>
+            </div>
+          </div>
+
+          <!-- Instagram -->
+          <div id="tab-instagram" class="tab-panel" role="tabpanel">
+            <div class="faq-card">
+              <h3>Will buying followers get my account banned?</h3>
+              <p>No. We use gradual, natural delivery patterns that mimic organic growth. Our followers come from real accounts, so Instagram's systems won't flag your profile for unusual activity.</p>
+            </div>
+            <div class="faq-card">
+              <h3>Do Instagram followers drop after I purchase them?</h3>
+              <p>Most of our follower packages come with a refill guarantee. If you see a drop within the warranty period, we'll replace them at no extra charge. Check each service's description for its refill policy.</p>
+            </div>
+            <div class="faq-card">
+              <h3>Can I buy Instagram Reels views?</h3>
+              <p>Absolutely. Our Reels views start from just $0.12/1K and begin within minutes. High view counts push your Reels into the Explore page, generating organic followers and engagement on top of your purchase.</p>
+            </div>
+            <div class="faq-card">
+              <h3>Does my Instagram account need to be public?</h3>
+              <p>Yes. Your account must be set to public before placing an order so our system can deliver the service. You can switch back to private after the order is completed if you prefer.</p>
+            </div>
+          </div>
+
+          <!-- Orders -->
+          <div id="tab-orders" class="tab-panel" role="tabpanel">
+            <div class="faq-card">
+              <h3>How do I place an order?</h3>
+              <p>Create a free account, add funds to your balance, navigate to the Instagram services section, select your package, paste your profile or post link, and submit. Delivery begins automatically.</p>
+            </div>
+            <div class="faq-card">
+              <h3>What happens if my order doesn't start?</h3>
+              <p>If your order hasn't started within 30 minutes, contact our support team via live chat or Telegram. We'll investigate and either restart or refund your order promptly.</p>
+            </div>
+            <div class="faq-card">
+              <h3>Can I cancel an order after placing it?</h3>
+              <p>Orders that haven't started yet can be cancelled for a full refund. Once delivery has begun, cancellations are handled on a case-by-case basis. Contact support as soon as possible.</p>
+            </div>
+            <div class="faq-card">
+              <h3>What is the minimum order amount?</h3>
+              <p>The minimum order value is $1. You can top up your balance starting from $5 using any of our supported payment methods, giving you flexibility to test services before committing to larger orders.</p>
+            </div>
+          </div>
+
+          <!-- Reseller -->
+          <div id="tab-reseller" class="tab-panel" role="tabpanel">
+            <div class="faq-card">
+              <h3>How does the reseller API work?</h3>
+              <p>Our API lets you place and manage orders programmatically from your own platform. You receive a unique API key after registration. Full documentation with code examples is available in your dashboard.</p>
+            </div>
+            <div class="faq-card">
+              <h3>Can I create a white-label Instagram SMM panel?</h3>
+              <p>Yes. Our child panel system lets you create a fully branded panel with your own domain, logo, and color scheme. Your clients interact with your brand while we handle all fulfillment behind the scenes.</p>
+            </div>
+            <div class="faq-card">
+              <h3>Are there special reseller pricing tiers?</h3>
+              <p>Yes, resellers unlock lower rates automatically as their monthly volume increases. We offer custom pricing agreements for high-volume partners. Contact our team to discuss a dedicated rate card.</p>
+            </div>
+            <div class="faq-card">
+              <h3>What support do resellers get?</h3>
+              <p>Resellers receive priority Telegram support with faster response times, a dedicated account manager for high-volume accounts, and access to our reseller-only Telegram group for tips and announcements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Resources -->
+    <section>
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="section-title">Additional Resources</h2>
+          <p class="section-sub">Explore guides about Instagram SMM panels, engagement strategies, and organic growth</p>
+        </div>
+        <div class="resources-grid">
+          <a href="https://igsmmpanel.com/" target="_blank" rel="noopener noreferrer" class="resource-link">
+            <div class="resource-icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Instagram SMM Panel Guide</h3>
+            <p>Everything you need to know about Instagram SMM panels and how to use them</p>
+            <div class="resource-more">Read Guide <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+          <a href="https://kicksta.co/blog/buying-instagram-likes" target="_blank" rel="noopener noreferrer" class="resource-link">
+            <div class="resource-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <h3>Buying Instagram Likes: Worth It?</h3>
+            <p>Detailed analysis of pros and cons of purchasing Instagram engagement</p>
+            <div class="resource-more">Explore Analysis <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+          <a href="https://www.amyshamblen.com/blog/12-ways-to-improve-your-instagram-organic-reach" target="_blank" rel="noopener noreferrer" class="resource-link">
+            <div class="resource-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>Improve Instagram Organic Reach</h3>
+            <p>12 proven ways to boost your Instagram reach naturally without paid services</p>
+            <div class="resource-more">View Tips <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container text-center">
+        <div style="max-width:768px; margin:0 auto;">
+          <h2 class="section-title">Ready to Grow Your Instagram?</h2>
+          <p style="font-size:1.25rem; color:hsl(var(--muted-foreground)); margin-bottom:2rem; max-width:640px; margin-left:auto; margin-right:auto;">Join thousands of creators and businesses who trust our Instagram SMM panel for real growth</p>
+          <div class="cta-btns">
+            <a href="register.html" class="btn-primary">Sign Up Now</a>
+            <a href="index.html#contact" class="btn-cta-outline">Contact Support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo-link" href="index.html">
+            <div class="logo-icon">S</div>
+            <span class="logo-text">SMM Panel Easy</span>
+          </a>
+          <p>The best and cheapest SMM panel for all your social media needs.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="youtube-smm-panel.html">YouTube SMM Panel</a></li>
+            <li><a href="tiktok-smm-panel.html">TikTok SMM Panel</a></li>
+            <li><a href="instagram-smm-panel.html">Instagram SMM Panel</a></li>
+            <li><a href="facebook-smm-panel.html">Facebook SMM Panel</a></li>
+            <li><a href="telegram-smm-panel.html">Telegram SMM Panel</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p class="footer-email">Email: <a href="mailto:hello@smmpaneleasy.com">hello@smmpaneleasy.com</a></p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SMM Panel Easy. All rights reserved. Built with care for your growth.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-panel').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      document.querySelectorAll('.tab-btn').forEach(function(b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      var target = document.getElementById('tab-' + tabId);
+      if (target) { target.classList.add('active'); }
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+    }
+  </script>
+
+</body>
+</html>

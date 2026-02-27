@@ -1,611 +1,845 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMM Panel Easy - Best SMM Panel | Cheap, Fast &amp; Reliable</title>
+  <meta name="description" content="Get the best SMM services with instant support. Direct provider with automated, fast delivery. Affordable social media marketing panel." />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
+            card: 'hsl(var(--card))',
+            border: 'hsl(var(--border))',
+            accent: {
+              DEFAULT: 'hsl(var(--accent))',
+              foreground: 'hsl(var(--accent-foreground))',
+            },
+            muted: {
+              DEFAULT: 'hsl(var(--muted))',
+              foreground: 'hsl(var(--muted-foreground))',
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            '2xl': '1rem',
+            '3xl': '1.5rem',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222 47% 11%;
+      --card: 0 0% 98%;
+      --border: 214 32% 91%;
+      --muted: 210 40% 96%;
+      --muted-foreground: 215 20% 45%;
+      --accent: 221 83% 53%;
+      --accent-foreground: 0 0% 100%;
+    }
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="smm panel easy, smmpaneleasy, youtube subscribers, youtube views, SMM Panel, Social Media Panel, Social Media Server, SMM Reseller Panel, Cheap SMM Panel, Best SMM Panel">
- <!-- <title>Sign in</title>  -->
-  <meta name="description" content="SMM Panel Easy is the world's best and cheapest Social Media SMM panel for resellers - Facebook, Instagram, Twitter, YouTube views &amp; more!">
+    * { box-sizing: border-box; }
 
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
-  
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->  
-    <style>.integration-fixed{position:fixed;z-index:10000000}.integration-fixed__top-left{top:0;left:0}.integration-fixed__top-right{top:0;right:0}.integration-fixed__bottom-left{bottom:0;left:0}.integration-fixed__bottom-right{bottom:0;right:0}
-</style>
+    body {
+      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      margin: 0;
+    }
 
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/keyframes6.css"/>
-  <link rel="stylesheet" href="css/animate.min.css"/>
-  <link rel="stylesheet" href="css/chartist.min.css">
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
+    /* Gradient text utilities */
+    .gradient-instagram {
+      background: linear-gradient(135deg, #7c3aed, #db2777, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient-tiktok {
+      background: linear-gradient(135deg, #000, #374151);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, hsl(221 83% 53% / 0.05), transparent);
+    }
+    .heading-gradient {
+      background: linear-gradient(to right, hsl(var(--foreground)), hsl(var(--foreground) / 0.7));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-      <link rel="stylesheet" type="text/css" href="css/qoyq76plt0chyzoy.css">
-      <link rel="stylesheet" type="text/css" href="css/p233uf6jdk8w69ls.css">
-      <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
-      <!-- fa-all.min.css removed (duplicate of FontAwesome CDN above) -->
-      <link rel="stylesheet" type="text/css" href="css/tp2jssyocan4ndm1.css">
-  </head>
-    
-      
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
 
-      
-  <!-- Main variables *content* -->
- 
-  <title>SMM Panel Easy - The Best and Cheapest SMM Reseller Panel</title>  
-  
-<body class="guest">
- 
-  
-<nav class="navbar navbar-default navbar-static-top ">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="smmpaneleasy.com" title="SMM Panel Easy - The Best &amp; Cheapest SMM Reseller Panel">
-                  </a>
+    /* Tab functionality */
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .tab-btn[aria-selected="true"] {
+      background-color: hsl(var(--accent));
+      color: hsl(var(--accent-foreground));
+    }
+
+    /* Hover transitions */
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: scale(1.05); }
+    .step-hover { transition: all 0.3s ease; }
+    .step-hover:hover { box-shadow: 0 10px 30px hsl(var(--accent) / 0.1); border-color: hsl(var(--accent)); }
+
+    /* Backdrop blur for header */
+    .header-blur {
+      background-color: hsl(var(--background) / 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- HEADER -->
+<header style="position:fixed;top:0;width:100%;z-index:50;border-bottom:1px solid hsl(var(--border));" class="header-blur">
+  <div style="max-width:80rem;margin:0 auto;padding:0 1.5rem;">
+    <div style="display:flex;align-items:center;justify-content:space-between;height:4rem;">
+      <!-- Logo -->
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="hsl(221,83%,53%)"/>
+          <path d="M8 16 L14 22 L24 10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span style="font-size:1.25rem;font-weight:700;color:hsl(var(--foreground));">SMM Panel Easy</span>
       </div>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-      <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="index.html">Sign in</a></li>
-                      <li><a href="services.html">Services</a></li>
-                      <li><a href="terms.html">Terms</a></li>
-                      <li><a href="signup.html">Sign up</a></li>
-                  </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="topBanner">
-<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="wow slideInDown">SMM PANEL EASY</h1>
-              	<h3 class="wow slideInUp">The <b>All-In-One</b> Social Media Marketing tool<br> you will <b>need!</h3>
-			</div>
-		</div>
-          <div class="context"></div>
-  <div class="area">
-     <ul class="circles">
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-     </ul>
-  </div>
-      	<div class="row bottom-row">
-      		<div class="col-sm-12">
-              	<div class="jadu-dabba">
-                  <div class="baba-wrap wow fadeInRight">
-              	  <div class="sitare-gardish-mai">
-
-              	  </div>
-                </div>
-                  <div class="circle-wrap">
-                  	<span class="circle sm-cir cir-1"></span>
-                    <span class="circle sm-cir cir-2"></span>
-                    <span class="circle sm-cir cir-3"></span>
-                    <span class="circle sm-cir cir-4"></span>
-                    <span class="circle sm-cir cir-5"></span>
-                    <span class="circle sm-cir cir-6"></span>
-                    <span class="circle sm-cir cir-7"></span>
-                    <span class="circle sm-cir cir-8"></span>
-                    <span class="circle sm-cir cir-9"></span>
-                    <span class="circle sm-cir cir-10"></span>
-                    <span class="circle sm-cir cir-11"></span>
-                    <span class="circle sm-cir cir-12"></span>
-                    <span class="circle md-cir cir-13"></span>
-                    <span class="circle md-cir cir-14"></span>
-                    <span class="circle bg-cir cir-15"></span>
-                    <span class="circle bg-cir cir-16"></span>
-                    <span class="circle bg-cir cir-17"></span>
-                    <span class="circle bg-cir cir-18"></span>
-                    <span class="circle bg-cir cir-19"></span>
-                    <span class="circle bg-cir cir-20"></span>
-                    <span class="circle bg-cir cir-21"></span>
-                    <span class="circle bg-cir cir-22"></span>
-                    <span class="circle bg-cir cir-23"></span>
-                    <span class="circle bg-cir cir-24"></span>
-                    <span class="circle bg-cir cir-25"></span>
-                    <span class="circle bg-cir cir-26"></span>
-                    <span class="circle soc-cir cir-27"><i class="fab fa-facebook-f"></i></span>
-                    <span class="circle soc-cir cir-28"><i class="fab fa-twitter"></i></span>
-                    <span class="circle soc-cir cir-29"><i class="fab fa-instagram"></i></span>
-                    <span class="circle soc-cir cir-30"><i class="fab fa-youtube"></i></span>
-                    <span class="circle soc-cir cir-31"><i class="fab fa-vimeo-v"></i></span>
-                    <span class="circle soc-cir cir-32"><i class="fab fa-linkedin"></i></span>
-                    <span class="circle soc-cir cir-33"><i class="fab fa-soundcloud"></i></span>
-                    <span class="circle soc-cir cir-34"><i class="fab fa-pinterest"></i></span>
-                  </div>
-              	</div>               
-				<h4 style="margin-bottom: 35px;">Login into account</h4>
-              	<!-- <p>Use your credentials to access your account.</p> -->
-      			<div class="form-wrap">
-                  <form method="post" action="index.html">
-                    
-         
-                            <div class="form-group eyeconBox">
-                      <i class="material-icons">perm_identity</i>
-                      <input type="text" class="form-control" id="username" name="LoginForm[username]" placeholder="Username">
-                    </div>
-                    <div class="form-group form-group__password eyeconBox">
-                      <i class="material-icons">lock</i>
-                      <input type="password" class="form-control" id="password" name="LoginForm[password]" placeholder="Password">
-																<a href="resetpassword.html" class="forgot-password">Forgot password?</a>
-                    </div>
-                    <ul>
-                      <li>
-                      	<label>
-                        <input type="checkbox" name="LoginForm[remember]" value="1" id="remember">Remember me
-                      	</label>
-                      </li>
-                      <li>
-                      	                      </li>
-                    </ul>
-                                        <input type="hidden" name="_csrf" value="U_C67J0dghG07e-rMFnw0B3gUFP8Del7SQhOFmMoSg4mk4-zqCmvd9eP14ZhNpKZSLdlNp1Smhl7XX9kJEQiag==">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                                        <div class="text-center" style="margin-top: 15px;">Do not have an account? <a href="signup.html">Sign up</a></div>
-                                      </form>
-                    <script src="https://www.google.com/recaptcha/api.js"></script>
-      			</div>
-      		</div>
-      	</div>
-	</div>
-	</div>
-</section>
-<section class="offer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="wow slideInDown">OUR FEATURES</h2>
-			</div>
-		</div>
-      	<div class="row">
-          <div class="col-sm-4">
-            <div class="media">
-              <div class="media-left">                
-                <img class="media-object" src="images/q-service.png">
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading wow fadeIn">Quality services</h4>
-                <p class="wow fadeIn">Unlike other websites, all of our services are checked every few minutes and everything we have listed works as described!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="media">
-              <div class="media-left">
-                <img class="media-object" src="images/u-cash.png">
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading wow fadeIn">Unbeatable prices</h4>
-                <p class="wow fadeIn">We make sure to give you the best rates possible so that you have an edge over all of your competitors!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="media">
-              <div class="media-left">
-                <img class="media-object" src="images/support.png">
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading wow fadeIn">24/7 Support</h4>
-                <p class="wow fadeIn">Our support team is always on hand to help you fix your issues and you can always expect a reply in a few minutes!</p>
-              </div>
-            </div>
-          </div>
-          
-      	</div>
-	</div>
-</section>
-<section class="major">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="wow slideInDown">Major 05 Things</h2>
-              	<h3 class="wow slideInUp">Why People Choose Us?</h3>
-              <div class="major-wrap">
-                <div class="major-box-wrap">
-                  <img class="major-icon-1 wow lightSpeedIn" data-wow-delay="2.1s" src="images/major-4_1.png" alt=""/>
-                  <div class="major-box wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="major-top-text">
-                      <span>01</span>
-                      <small>STEP</small>
-                    </div>
-                    <div class="major-main-text">We<br>Listen</div>
-                  </div>
-                </div>
-                <div class="major-box-wrap">
-                  <img class="major-icon-2 wow lightSpeedIn" data-wow-delay="2.2s" src="images/major-2.png" alt=""/>
-                  <div class="major-box wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="major-top-text">
-                      <span>02</span>
-                      <small>STEP</small>
-                    </div>
-                    <div class="major-main-text">We<br>Understand</div>
-                  </div>
-                </div>
-                <div class="major-box-wrap">
-                  <img class="major-icon-3 wow lightSpeedIn" data-wow-delay="2.3s" src="images/major-3.png" alt=""/>
-                  <div class="major-box wow fadeInUp" data-wow-delay="1.2s">
-                    <div class="major-top-text">
-                      <span>03</span>
-                      <small>STEP</small>
-                    </div>
-                    <div class="major-main-text">We<br>Analyze</div>
-                  </div>
-                </div>
-                <div class="major-box-wrap">
-                  <img class="major-icon-4 wow lightSpeedIn" data-wow-delay="2.4s" src="images/major-4.png" alt=""/>
-                  <div class="major-box wow fadeInUp" data-wow-delay="1.6s">
-                    <div class="major-top-text">
-                      <span>04</span>
-                      <small>STEP</small>
-                    </div>
-                    <div class="major-main-text">We Discuss<br>Solutions</div>
-                  </div>
-                </div>
-                <div class="major-box-wrap">
-                  <img class="major-icon-5 wow lightSpeedIn" data-wow-delay="2.5s" src="images/major-5.png" alt=""/>
-                  <div class="major-box wow fadeInUp" data-wow-delay="2.0s">
-                    <div class="major-top-text">
-                      <span>05</span>
-                      <small>STEP</small>
-                    </div>
-                    <div class="major-main-text">We<br>Execute</div>
-                  </div>
-                </div>
-              </div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="core">
-	<div class="container">
-		<div class="row">
-	<div class="col-sm-12">
-				<h2 class="wow slideInDown">SMM Panel Easy</h2>
-              	<h3 class="wow slideInUp">Core Services</h3>
-			</div>
-		</div>
-      	<div class="row">
-      		<div class="col-sm-12">
-      			<div class="core-wrap">
-      				<img class="main-bar" src="images/core-back.png" alt=""/>
-                  	<img class="mobile-bar" src="images/core-back-2.png" alt=""/>
-                  	<div class="core-box pinterest wow fadeInDown" data-wow-delay="0.6s">
-                  		<span class="core-text">Pinterest</span>
-                      	<img class="social-icon" src="images/core-icon-pinterest.png" alt=""/>
-                  	</div>
-                  	<div class="core-box linkedin wow fadeInDown" data-wow-delay="0.8s">
-                  		<span class="core-text">LinkedIn</span>
-                      	<img class="social-icon" src="images/core-icon-linkedin.png" alt=""/>
-                  	</div>
-                  	<div class="core-box youtube wow fadeInDown" data-wow-delay="1.0s">
-                  		<span class="core-text">YouTube</span>
-                      	<img class="social-icon" src="images/core-icon-youtube.png" alt=""/>
-                  	</div>
-                  	<div class="core-box twitter wow fadeInDown" data-wow-delay="1.2s">
-                  		<span class="core-text">Twitter</span>
-                      	<img class="social-icon" src="images/core-icon-twitter.png" alt=""/>
-                  	</div>
-                  	<div class="core-box instagram wow fadeInDown" data-wow-delay="1.4s">
-                  		<span class="core-text">Instagram</span>
-                      	<img class="social-icon" src="images/core-icon-instagram.png" alt=""/>
-                  	</div>
-                  	<div class="core-box facebook wow fadeInDown" data-wow-delay="1.6s">
-                  		<span class="core-text">Facebook</span>
-                      	<img class="social-icon" src="images/core-icon-facebook.png" alt=""/>
-                  	</div>
-      			</div>
-      		</div>
-      	</div>
-	</div>
-</section>
-<section class="manage">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2 class="wow slideInDown">Manage All Your</h2>
-        <h3 class="wow slideInUp">Social Accounts in One Place</h3>
-        <p class="wow fadeIn">We’re the online marketing veterans. A Cheap SMM and SEO service Reseller Auto Panel Script. Fast,Reliable and Secure, offering World Best Quality and Cheapest Automatic Social Media Services which is specially developed for Resellers with High Speed order completion!
-</p>
-        <p class="wow fadeIn">Boost your posts on your Social Networks Now. We work with Instagram, Facebook, YouTube, Twitter and many more!</p>
-        <a href="signup.html" class="btn btn-primary wow fadeIn">Sign up</a>
-      </div>
-      <div class="col-sm-6">
-      	<img class="social-bunch wow fadeIn" src="images/collection.png" alt=""/>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="we-deliver">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
-				<img src="images/deliever.png" alt=""/>
-			</div>
-          	<div class="col-sm-6">
-          		<div class="slider-1">
-                  <div>
-                  	<h2>We Deliver Quality</h2>
-                    <p>We provide the cheapest Quality SMM services among our competitors. If you are looking for cheapest promotions then our SMM Panel is the right for you.</p>
-                  </div>
-                  <div>
-                  	<h2>We Deliver Services</h2>
-                    <p>Services Analyzed and Tested every 2 hours to make sure that your orders will be delivered without issues.</p>
-                  </div>
-                  <div>
-                  	<h2>We Deliver For You</h2>
-                    <p>We provide the highest quality of promotions For You. Be it Instagram Followers, or Facebook Page Likes, or YouTube Views, Our SMM Panel will deliver only the high quality ones. Our followers will stick, and you will want to order from us again.</p>
-                  </div>
-                </div>
-          	</div>
-		</div>
-	</div>
-</section>
-
-<section class="people">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="slider-2">
-                  <div>
-                  	<h2>What Our Customers Think</h2>
-                    <p>Instant service, prompt support, Purchased 3000 Facebook Likes for our company and worked indeed!</p>
-                    <h4>Casey <span style="color: #fea621;">Parrish</span> <small>- Facebook</small></h4>
-                  </div>
-                  <div>
-                  	<h2>What Our Customers Think</h2>
-                    <p>I have been purchasing YouTube Views &amp; Subscribers for over a year and never got a delay!, Thank you SMM Panel Easy!</p>
-                    <h4>Tayla <span style="color: #fea621;">Nobbs</span> <small>- YouTube</small></h4>
-                  </div>
-                  <div>
-                  	<h2>What Our Customers Think</h2>
-                    <p>This is the best site with some exclusive services, fast and friendly support too :)</p>
-                    <h4>Earl D<span style="color: #fea621;">Enright</span> <small>- Instagram</small></h4>
-                  </div>
-                </div>
-			</div>
-          	<div class="col-sm-6"></div>
-		</div>
-      	<div class="row">
-      		<div class="col-sm-12">
-      			<div class="animation-box">
-                  <div class="star-ratting">
-                    <img class="star-rate-1 wow fadeInLeft" data-wow-delay="0.6s" src="images/star-1.png" alt=""/>
-                    <img class="star-rate-2 wow fadeInLeft" data-wow-delay="0.8s" src="images/star-1.png" alt=""/>
-                    <img class="star-rate-3 wow fadeInLeft" data-wow-delay="1.0s" src="images/star-1.png" alt=""/>
-                    <img class="star-rate-4 wow fadeInLeft" data-wow-delay="1.2s" src="images/star-1.png" alt=""/>
-                    <img class="plane-1 wow fadeIn" data-wow-delay="1.8s" src="images/plane-1.png" alt=""/>
-                    <img class="plane-2 wow fadeIn" data-wow-delay="2.0s" src="images/plane-2.png" alt=""/>
-                    <div class="hat-star">
-                      <img class="hat-star wow fadeInDown" data-wow-delay="1.4s" src="images/star-1.png" alt=""/>
-                     </div>
-                  </div>
-                  <img class="wizard-man" src="images/feedback.png" alt=""/>
-      			</div>
-      		</div>
-      	</div>
-	</div>
-</section>
-<section class="featured">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>Interested To <br>Get Our Featured Service</h2>
-        <a href="signup.html" class="btn btn-primary">Get Started Now</a>
-        <div class="animation-box-2">
-          <img class="left-bird" src="images/bottom1.png" alt=""/>
-          <img class="right-bird" src="images/bottom2.png" alt=""/>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-  <footer>
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <ul class="footer-social">
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>Copyright © 2024 SMM Panel Easy</p>
-          </div>
-          <div class="col-sm-6">
-            <ul class="footer-nav">
-                            <li class="active"><a href="index.html">Sign in</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="terms.html">Terms</a></li>
-                            <li><a href="signup.html">Sign up</a></li>
-                          </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-  	$('.slider-1,.slider-2').slick({
-        dots: true,
-        arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        speed: 500,
-        autoplay:true,
-        autoplaySpeed: 8000,
-        responsive: [
-            {
-              breakpoint: 500,
-              settings: {
-    			slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: false,
-                dots: true,
-                speed: 300
-               }
-            }
-        ],
-
-    	fade: true,
-    	cssEase: 'linear'
-      });
-  });
-  new WOW().init();
-</script>
-  
-
-
-<style>
-    .whatsapp-container{padding:24px}.whatsapp-button{width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF!important;border-radius:50px;text-align:center;font-size:30px;box-shadow:2px 2px 3px #999;display:flex;align-items:center;justify-content:center;text-decoration:none!important;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;-ms-transition:all 0.3s ease;transition:all 0.3s ease;transform:scale(0.9)}.whatsapp-button:hover{transform:scale(1);background-color:#1fcc5f}
-</style>
-<div class="integration-fixed integration-fixed__bottom-right">
-    <div class="whatsapp-container">
-        <a href="https://api.whatsapp.com/send?phone=971527623549" target="_blank" class="whatsapp-button">
-            <i class="fab fa-whatsapp"></i>
+      <!-- Nav -->
+      <nav style="display:none;" class="md-nav">
+        <a href="#services" style="font-size:0.875rem;color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--foreground))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Services</a>
+        <a href="#features" style="font-size:0.875rem;color:hsl(var(--muted-foreground));text-decoration:none;margin-left:2rem;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--foreground))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Features</a>
+        <a href="#how-it-works" style="font-size:0.875rem;color:hsl(var(--muted-foreground));text-decoration:none;margin-left:2rem;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--foreground))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">How It Works</a>
+        <a href="#faq" style="font-size:0.875rem;color:hsl(var(--muted-foreground));text-decoration:none;margin-left:2rem;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--foreground))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">FAQ</a>
+      </nav>
+      <!-- Buttons -->
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <a href="login.html" style="text-decoration:none;">
+          <button style="display:inline-flex;align-items:center;justify-content:center;font-size:0.875rem;font-weight:500;padding:0.4rem 0.75rem;border-radius:0.375rem;border:none;background:transparent;color:hsl(var(--foreground));cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='hsl(var(--muted))'" onmouseout="this.style.background='transparent'">Sign In</button>
         </a>
+        <a href="register.html" style="text-decoration:none;">
+          <button style="display:inline-flex;align-items:center;justify-content:center;font-size:0.875rem;font-weight:500;padding:0.4rem 0.75rem;border-radius:0.375rem;border:none;background:hsl(var(--accent));color:hsl(var(--accent-foreground));cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Get Started</button>
+        </a>
+      </div>
     </div>
-</div>
+  </div>
+</header>
 
-  <script type="text/javascript" src="js/jquery.min.js">
-      </script>
-  <script type="text/javascript" src="js/cflcci28nes0yhln.js">
-      </script>
-  <script type="text/javascript" src="js/t3u8bszy7ju8y8or.js">
-      </script>
-  <script type="text/javascript" src="js/oor0gfnm6a7rec3u.js">
-      </script>
-  <script type="text/javascript" src="js/5sj057uwzy9m8fjz.js">
-      </script>
-  <script type="text/javascript" src="js/58mpzkzzsbqn0teh.js">
-      </script>
-  <script type="text/javascript" src="js/eqsctug2tk319sss.js">
-      </script>
-  <script type="text/javascript">
-     window.modules.layouts = {"theme_id":12,"auth":0,"live":true,"csrftoken":"U_C67J0dghG07e-rMFnw0B3gUFP8Del7SQhOFmMoSg4mk4-zqCmvd9eP14ZhNpKZSLdlNp1Smhl7XX9kJEQiag=="};   </script>
-  <script type="text/javascript">
-     window.modules.layouts = {"theme_id":12,"auth":0,"live":true,"csrftoken":"U_C67J0dghG07e-rMFnw0B3gUFP8Del7SQhOFmMoSg4mk4-zqCmvd9eP14ZhNpKZSLdlNp1Smhl7XX9kJEQiag=="};   </script>
-  <script type="text/javascript">
-     window.modules.signin = [];   </script>
-  <script type="text/javascript">
-      </script>
-<script type="text/javascript" src="js/slick.min.js"></script>
+<main>
 
- <script src="js/wow.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-  	$('.slider-1,.slider-2').slick({
-        dots: true,
-        arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        speed: 500,
-        autoplay:true,
-        autoplaySpeed: 4000,
-        responsive: [
-            {
-              breakpoint: 500,
-              settings: {
-    			slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: false,
-                dots: true,
-                speed: 300
-               }
-            }
-        ],
+<!-- HERO -->
+<section style="position:relative;padding:10rem 1.5rem 8rem;overflow:hidden;">
+  <div class="hero-gradient" style="position:absolute;inset:0;"></div>
+  <div style="max-width:80rem;margin:0 auto;position:relative;z-index:10;">
+    <div style="text-align:center;max-width:56rem;margin:0 auto;">
+      <h1 class="heading-gradient" style="font-size:clamp(2.5rem,8vw,4.5rem);font-weight:800;margin-bottom:1.5rem;line-height:1.1;text-wrap:balance;">
+        Grow Your Social Media with SMM Panel Easy
+      </h1>
+      <p style="font-size:clamp(1.1rem,2.5vw,1.375rem);color:hsl(var(--muted-foreground));margin-bottom:2rem;line-height:1.6;text-wrap:balance;">
+        The best and cheapest SMM panel. Get instant delivery, 24/7 support, and premium quality for all platforms.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem;">
+        <a href="register.html" style="text-decoration:none;">
+          <button style="display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;font-size:1.125rem;font-weight:600;padding:0.9rem 2.5rem;border-radius:0.5rem;border:none;background:hsl(var(--accent));color:hsl(var(--accent-foreground));cursor:pointer;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+            Get Started Free <i class="fas fa-arrow-right"></i>
+          </button>
+        </a>
+      </div>
+      <div style="margin-top:3rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2rem;font-size:0.875rem;color:hsl(var(--muted-foreground));">
+        <div style="display:flex;align-items:center;gap:0.5rem;"><i class="fas fa-check-circle" style="color:hsl(var(--accent));"></i><span>Instant Start</span></div>
+        <div style="display:flex;align-items:center;gap:0.5rem;"><i class="fas fa-check-circle" style="color:hsl(var(--accent));"></i><span>Best Prices</span></div>
+        <div style="display:flex;align-items:center;gap:0.5rem;"><i class="fas fa-check-circle" style="color:hsl(var(--accent));"></i><span>24/7 Support</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    	fade: true,
-    	cssEase: 'linear'
-      });
-  });
-  new WOW().init();
-</script> 
-<script src="js/chartist.min.js"></script>
-<script type="text/javascript">
-  $("#toi").click(function(e) {
-    e.preventDefault();
-    $("#main-wrap").toggleClass("launched");
-  });
-  if ($(window).width() < 1000) {
-  	$('#main-wrap').removeClass('launched');
-  	$(".mobileSearch a").click(function(e){
-      e.preventDefault();
-      $(".search-bar").toggleClass("toggleSearch");
-  	});
-  } else {
-  	$('#main-wrap').addClass('launched');
+<!-- SERVICES / PLATFORMS -->
+<section id="services" style="padding:8rem 1.5rem;background:hsl(var(--muted)/0.3);">
+  <div style="max-width:80rem;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:1rem;text-wrap:balance;color:hsl(var(--foreground));">Choose Your Platform</h2>
+      <p style="font-size:1.125rem;color:hsl(var(--muted-foreground));max-width:40rem;margin:0 auto;text-wrap:balance;">Select a platform to view our services. Among the cheapest prices in the industry.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;">
+
+      <!-- Instagram -->
+      <div class="card-hover" style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));cursor:pointer;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='hsl(var(--border))';this.style.boxShadow='none'">
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <i class="fab fa-instagram gradient-instagram" style="font-size:1.875rem;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;color:hsl(var(--foreground));">Instagram</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));margin-bottom:0.75rem;">Followers, Likes, Views &amp; More</p>
+          <span style="font-size:0.75rem;color:hsl(var(--accent));font-weight:700;">From $0.25/1K</span>
+        </div>
+      </div>
+
+      <!-- Facebook -->
+      <div class="card-hover" style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));cursor:pointer;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='hsl(var(--border))';this.style.boxShadow='none'">
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <i class="fab fa-facebook" style="font-size:1.875rem;color:#2563eb;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;color:hsl(var(--foreground));">Facebook</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));margin-bottom:0.75rem;">Likes, Followers, Shares &amp; More</p>
+          <span style="font-size:0.75rem;color:hsl(var(--accent));font-weight:700;">From $0.55/1K</span>
+        </div>
+      </div>
+
+      <!-- TikTok -->
+      <div class="card-hover" style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));cursor:pointer;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='hsl(var(--border))';this.style.boxShadow='none'">
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <i class="fab fa-tiktok gradient-tiktok" style="font-size:1.875rem;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;color:hsl(var(--foreground));">TikTok</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));margin-bottom:0.75rem;">Followers, Likes, Views &amp; More</p>
+          <span style="font-size:0.75rem;color:hsl(var(--accent));font-weight:700;">From $0.20/1K</span>
+        </div>
+      </div>
+
+      <!-- YouTube -->
+      <div class="card-hover" style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));cursor:pointer;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='hsl(var(--border))';this.style.boxShadow='none'">
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <i class="fab fa-youtube" style="font-size:1.875rem;color:#dc2626;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;color:hsl(var(--foreground));">YouTube</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));margin-bottom:0.75rem;">Subscribers, Views, Likes &amp; More</p>
+          <span style="font-size:0.75rem;color:hsl(var(--accent));font-weight:700;">From $0.60/1K</span>
+        </div>
+      </div>
+
+      <!-- Twitter -->
+      <div class="card-hover" style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));cursor:pointer;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='hsl(var(--border))';this.style.boxShadow='none'">
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <i class="fab fa-twitter" style="font-size:1.875rem;color:#0ea5e9;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;color:hsl(var(--foreground));">Twitter</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));margin-bottom:0.75rem;">Followers, Likes, Retweets &amp; More</p>
+          <span style="font-size:0.75rem;color:hsl(var(--accent));font-weight:700;">From $0.75/1K</span>
+        </div>
+      </div>
+
+      <!-- Telegram -->
+      <div class="card-hover" style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));cursor:pointer;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='hsl(var(--border))';this.style.boxShadow='none'">
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <i class="fab fa-telegram" style="font-size:1.875rem;color:#3b82f6;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;color:hsl(var(--foreground));">Telegram</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));margin-bottom:0.75rem;">Members, Views, Reactions &amp; More</p>
+          <span style="font-size:0.75rem;color:hsl(var(--accent));font-weight:700;">From $1.20/1K</span>
+        </div>
+      </div>
+
+      <!-- Spotify -->
+      <div class="card-hover" style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));cursor:pointer;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='hsl(var(--border))';this.style.boxShadow='none'">
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <i class="fab fa-spotify" style="font-size:1.875rem;color:#22c55e;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;color:hsl(var(--foreground));">Spotify</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));margin-bottom:0.75rem;">Plays, Followers, Monthly Listeners</p>
+          <span style="font-size:0.75rem;color:hsl(var(--accent));font-weight:700;">From $0.90/1K</span>
+        </div>
+      </div>
+
+      <!-- Threads -->
+      <div class="card-hover" style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));cursor:pointer;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='hsl(var(--border))';this.style.boxShadow='none'">
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <i class="fab fa-threads" style="font-size:1.875rem;color:#0f172a;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;color:hsl(var(--foreground));">Threads</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));margin-bottom:0.75rem;">Followers, Likes, Reposts &amp; More</p>
+          <span style="font-size:0.75rem;color:hsl(var(--accent));font-weight:700;">From $1.40/1K</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US / FEATURES -->
+<section id="features" style="padding:8rem 1.5rem;">
+  <div style="max-width:80rem;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:1rem;color:hsl(var(--foreground));text-wrap:balance;">Why Choose Easy SMM Panel</h2>
+      <p style="font-size:1.125rem;color:hsl(var(--muted-foreground));max-width:40rem;margin:0 auto;text-wrap:balance;">We provide the best SMM services with fast delivery and great support.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
+
+      <!-- Feature Card -->
+      <div style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="width:3.5rem;height:3.5rem;border-radius:0.75rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+          <i class="fas fa-bolt" style="color:hsl(var(--accent));font-size:1.5rem;"></i>
+        </div>
+        <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Instant Delivery</h3>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;">Orders start within seconds. Fast and automatic delivery for all services. No waiting around.</p>
+      </div>
+
+      <div style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="width:3.5rem;height:3.5rem;border-radius:0.75rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+          <i class="fas fa-dollar-sign" style="color:hsl(var(--accent));font-size:1.5rem;"></i>
+        </div>
+        <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Cheapest Prices</h3>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;">Best rates in the market. High quality services at the lowest cost. Save money while growing.</p>
+      </div>
+
+      <div style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="width:3.5rem;height:3.5rem;border-radius:0.75rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+          <i class="fas fa-headset" style="color:hsl(var(--accent));font-size:1.5rem;"></i>
+        </div>
+        <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">24/7 Support</h3>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;">Always here to help you. Live support available anytime. Quick response to all questions.</p>
+      </div>
+
+      <div style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="width:3.5rem;height:3.5rem;border-radius:0.75rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+          <i class="fas fa-robot" style="color:hsl(var(--accent));font-size:1.5rem;"></i>
+        </div>
+        <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Fully Automated</h3>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;">Smart automation for instant results. Orders processed automatically. Reliable system that works.</p>
+      </div>
+
+      <div style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="width:3.5rem;height:3.5rem;border-radius:0.75rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+          <i class="fas fa-star" style="color:hsl(var(--accent));font-size:1.5rem;"></i>
+        </div>
+        <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Premium Quality</h3>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;">Real and active users. High retention rates. Quality that lasts and delivers real growth.</p>
+      </div>
+
+      <div style="position:relative;padding:2rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="width:3.5rem;height:3.5rem;border-radius:0.75rem;background:linear-gradient(135deg,hsl(var(--accent)/0.2),hsl(var(--accent)/0.1));display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+          <i class="fas fa-shield-alt" style="color:hsl(var(--accent));font-size:1.5rem;"></i>
+        </div>
+        <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Secure &amp; Safe</h3>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;">100% safe methods. No password required. Your account security is always protected.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" style="padding:8rem 1.5rem;background:hsl(var(--muted)/0.3);">
+  <div style="max-width:80rem;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:1rem;color:hsl(var(--foreground));text-wrap:balance;">How It Works</h2>
+      <p style="font-size:1.125rem;color:hsl(var(--muted-foreground));max-width:40rem;margin:0 auto;text-wrap:balance;">Getting started is simple. Follow these easy steps to grow your social media.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2rem;">
+
+      <!-- Step 1 -->
+      <div class="step-hover" style="position:relative;background:hsl(var(--card));border:1px solid hsl(var(--accent)/0.2);border-radius:1.5rem;padding:2rem;padding-top:3rem;">
+        <div style="position:absolute;top:-1.5rem;left:2rem;width:3rem;height:3rem;border-radius:50%;background:linear-gradient(135deg,hsl(var(--accent)),hsl(var(--accent)/0.8));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;box-shadow:0 4px 15px hsl(var(--accent)/0.4);">1</div>
+        <div style="text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.1),hsl(var(--accent)/0.05));display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">
+            <i class="fas fa-user-plus" style="color:hsl(var(--accent));font-size:1.875rem;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Create Account</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Sign up for free in seconds. No credit card needed to start.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-hover" style="position:relative;background:hsl(var(--card));border:1px solid hsl(var(--accent)/0.2);border-radius:1.5rem;padding:2rem;padding-top:3rem;">
+        <div style="position:absolute;top:-1.5rem;left:2rem;width:3rem;height:3rem;border-radius:50%;background:linear-gradient(135deg,hsl(var(--accent)),hsl(var(--accent)/0.8));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;box-shadow:0 4px 15px hsl(var(--accent)/0.4);">2</div>
+        <div style="text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.1),hsl(var(--accent)/0.05));display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">
+            <i class="fas fa-wallet" style="color:hsl(var(--accent));font-size:1.875rem;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Add Funds</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Top up your balance using any payment method you prefer.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-hover" style="position:relative;background:hsl(var(--card));border:1px solid hsl(var(--accent)/0.2);border-radius:1.5rem;padding:2rem;padding-top:3rem;">
+        <div style="position:absolute;top:-1.5rem;left:2rem;width:3rem;height:3rem;border-radius:50%;background:linear-gradient(135deg,hsl(var(--accent)),hsl(var(--accent)/0.8));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;box-shadow:0 4px 15px hsl(var(--accent)/0.4);">3</div>
+        <div style="text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.1),hsl(var(--accent)/0.05));display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">
+            <i class="fas fa-shopping-cart" style="color:hsl(var(--accent));font-size:1.875rem;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Select Service</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Choose your platform and service. Pick what fits your needs best.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-hover" style="position:relative;background:hsl(var(--card));border:1px solid hsl(var(--accent)/0.2);border-radius:1.5rem;padding:2rem;padding-top:3rem;">
+        <div style="position:absolute;top:-1.5rem;left:2rem;width:3rem;height:3rem;border-radius:50%;background:linear-gradient(135deg,hsl(var(--accent)),hsl(var(--accent)/0.8));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;box-shadow:0 4px 15px hsl(var(--accent)/0.4);">4</div>
+        <div style="text-align:center;">
+          <div style="width:4rem;height:4rem;border-radius:1rem;background:linear-gradient(135deg,hsl(var(--accent)/0.1),hsl(var(--accent)/0.05));display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">
+            <i class="fas fa-check-circle" style="color:hsl(var(--accent));font-size:1.875rem;"></i>
+          </div>
+          <h3 style="font-size:1.25rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Enjoy Results</h3>
+          <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Watch your order start instantly. Results delivered fast and safe.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORTED PLATFORMS GRID -->
+<section style="padding:8rem 1.5rem;">
+  <div style="max-width:80rem;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:1rem;color:hsl(var(--foreground));text-wrap:balance;">Supported Social Media Platforms</h2>
+      <p style="font-size:1.125rem;color:hsl(var(--muted-foreground));max-width:40rem;margin:0 auto;text-wrap:balance;">We offer a wide range of SMM services for all your favorite platforms.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:1.5rem;">
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-instagram gradient-instagram" style="font-size:3rem;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-facebook" style="font-size:3rem;color:#2563eb;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-tiktok gradient-tiktok" style="font-size:3rem;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-youtube" style="font-size:3rem;color:#dc2626;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-twitter" style="font-size:3rem;color:#0ea5e9;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-telegram" style="font-size:3rem;color:#3b82f6;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-spotify" style="font-size:3rem;color:#22c55e;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-threads" style="font-size:3rem;color:#0f172a;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-linkedin" style="font-size:3rem;color:#1d4ed8;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-pinterest" style="font-size:3rem;color:#dc2626;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-reddit" style="font-size:3rem;color:#f97316;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-tumblr" style="font-size:3rem;color:#1e3a5f;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fas fa-play" style="font-size:3rem;color:#ef4444;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-vimeo" style="font-size:3rem;color:#06b6d4;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-soundcloud" style="font-size:3rem;color:#fb923c;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-twitch" style="font-size:3rem;color:#9333ea;"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- PAYMENT METHODS -->
+<section style="padding:8rem 1.5rem;background:hsl(var(--muted)/0.3);">
+  <div style="max-width:80rem;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:1rem;color:hsl(var(--foreground));text-wrap:balance;">Supported Payment Methods</h2>
+      <p style="font-size:1.125rem;color:hsl(var(--muted-foreground));max-width:40rem;margin:0 auto;text-wrap:balance;">Pay with your preferred method. We support all major payment options worldwide.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:1.5rem;">
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-cc-visa" style="font-size:3rem;color:#2563eb;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-cc-mastercard" style="font-size:3rem;color:#dc2626;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-cc-paypal" style="font-size:3rem;color:#1d4ed8;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-cc-stripe" style="font-size:3rem;color:#4f46e5;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-bitcoin" style="font-size:3rem;color:#f97316;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-ethereum" style="font-size:3rem;color:#374151;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-cc-amex" style="font-size:3rem;color:#3b82f6;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-cc-discover" style="font-size:3rem;color:#ea580c;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-cc-apple-pay" style="font-size:3rem;color:#1f2937;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-google-pay" style="font-size:3rem;color:hsl(var(--foreground));"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-cc-amazon-pay" style="font-size:3rem;color:#f97316;"></i></div>
+      <div class="card-hover" style="display:flex;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fab fa-alipay" style="font-size:3rem;color:#3b82f6;"></i></div>
+      <div class="card-hover" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fas fa-mobile-alt" style="font-size:2.5rem;color:#16a34a;margin-bottom:0.25rem;"></i><span style="font-size:0.75rem;font-weight:700;color:hsl(var(--foreground));">UPI</span></div>
+      <div class="card-hover" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fas fa-qrcode" style="font-size:2.5rem;color:#0d9488;margin-bottom:0.25rem;"></i><span style="font-size:0.75rem;font-weight:700;color:hsl(var(--foreground));">PIX</span></div>
+      <div class="card-hover" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fas fa-university" style="font-size:2.5rem;color:#2563eb;margin-bottom:0.25rem;"></i><span style="font-size:0.75rem;font-weight:700;color:hsl(var(--foreground));">Bank</span></div>
+      <div class="card-hover" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fas fa-credit-card" style="font-size:2.5rem;color:#9333ea;margin-bottom:0.25rem;"></i><span style="font-size:0.75rem;font-weight:700;color:hsl(var(--foreground));">Skrill</span></div>
+      <div class="card-hover" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fas fa-money-check-alt" style="font-size:2.5rem;color:#dc2626;margin-bottom:0.25rem;"></i><span style="font-size:0.75rem;font-weight:700;color:hsl(var(--foreground));">Payoneer</span></div>
+      <div class="card-hover" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;border-radius:0.75rem;background:hsl(var(--card));border:1px solid hsl(var(--border));transition:border-color 0.2s;" onmouseover="this.style.borderColor='hsl(var(--accent))'" onmouseout="this.style.borderColor='hsl(var(--border))'"><i class="fas fa-plus-circle" style="font-size:2.5rem;color:hsl(var(--muted-foreground));margin-bottom:0.25rem;"></i><span style="font-size:0.75rem;font-weight:700;color:hsl(var(--foreground));">More</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="padding:8rem 1.5rem;">
+  <div style="max-width:80rem;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:1rem;color:hsl(var(--foreground));text-wrap:balance;">What Our Customers Say</h2>
+      <p style="font-size:1.125rem;color:hsl(var(--muted-foreground));max-width:40rem;margin:0 auto;text-wrap:balance;">Join thousands of happy customers who trust SMM Panel Easy for their growth.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2rem;">
+
+      <!-- Testimonial 1 -->
+      <div style="position:relative;padding:2rem;border-radius:1.5rem;background:linear-gradient(135deg,hsl(var(--card)),hsl(var(--accent)/0.05));border:1px solid hsl(var(--accent)/0.2);transition:all 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'" onmouseout="this.style.borderColor='hsl(var(--accent)/0.2)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;">
+          <div style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,hsl(var(--accent)),hsl(var(--accent)/0.7));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;">JD</div>
+          <div>
+            <h4 style="font-weight:600;color:hsl(var(--foreground));margin:0 0 0.25rem;">John Davis</h4>
+            <div style="color:#eab308;font-size:0.875rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;font-style:italic;">"Best SMM panel I have used. Fast delivery and great prices. My orders always start instantly. Highly recommend!"</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div style="position:relative;padding:2rem;border-radius:1.5rem;background:linear-gradient(135deg,hsl(var(--card)),hsl(var(--accent)/0.05));border:1px solid hsl(var(--accent)/0.2);transition:all 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'" onmouseout="this.style.borderColor='hsl(var(--accent)/0.2)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;">
+          <div style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#ec4899,#a855f7);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;">SM</div>
+          <div>
+            <h4 style="font-weight:600;color:hsl(var(--foreground));margin:0 0 0.25rem;">Sarah Miller</h4>
+            <div style="color:#eab308;font-size:0.875rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;font-style:italic;">"Amazing support team. They helped me set up everything. Prices are the lowest I could find. Very happy with the service."</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div style="position:relative;padding:2rem;border-radius:1.5rem;background:linear-gradient(135deg,hsl(var(--card)),hsl(var(--accent)/0.05));border:1px solid hsl(var(--accent)/0.2);transition:all 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'" onmouseout="this.style.borderColor='hsl(var(--accent)/0.2)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;">
+          <div style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;">MJ</div>
+          <div>
+            <h4 style="font-weight:600;color:hsl(var(--foreground));margin:0 0 0.25rem;">Mike Johnson</h4>
+            <div style="color:#eab308;font-size:0.875rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;font-style:italic;">"Using this for my reselling business. The API is easy to use. Child panel feature is perfect. Making good profit!"</p>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div style="position:relative;padding:2rem;border-radius:1.5rem;background:linear-gradient(135deg,hsl(var(--card)),hsl(var(--accent)/0.05));border:1px solid hsl(var(--accent)/0.2);transition:all 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'" onmouseout="this.style.borderColor='hsl(var(--accent)/0.2)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;">
+          <div style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#22c55e,#10b981);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;">EW</div>
+          <div>
+            <h4 style="font-weight:600;color:hsl(var(--foreground));margin:0 0 0.25rem;">Emily Wilson</h4>
+            <div style="color:#eab308;font-size:0.875rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;font-style:italic;">"Quality is top notch. No drops on followers. Everything works as promised. Will keep using this service."</p>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div style="position:relative;padding:2rem;border-radius:1.5rem;background:linear-gradient(135deg,hsl(var(--card)),hsl(var(--accent)/0.05));border:1px solid hsl(var(--accent)/0.2);transition:all 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'" onmouseout="this.style.borderColor='hsl(var(--accent)/0.2)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;">
+          <div style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#f97316,#ef4444);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;">DL</div>
+          <div>
+            <h4 style="font-weight:600;color:hsl(var(--foreground));margin:0 0 0.25rem;">David Lee</h4>
+            <div style="color:#eab308;font-size:0.875rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;font-style:italic;">"Been using for 6 months now. Never had any issues. Customer support is very helpful. Great panel overall."</p>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div style="position:relative;padding:2rem;border-radius:1.5rem;background:linear-gradient(135deg,hsl(var(--card)),hsl(var(--accent)/0.05));border:1px solid hsl(var(--accent)/0.2);transition:all 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent))';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.08)'" onmouseout="this.style.borderColor='hsl(var(--accent)/0.2)';this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;">
+          <div style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#6366f1,#a855f7);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;">LB</div>
+          <div>
+            <h4 style="font-weight:600;color:hsl(var(--foreground));margin:0 0 0.25rem;">Lisa Brown</h4>
+            <div style="color:#eab308;font-size:0.875rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+        <p style="color:hsl(var(--muted-foreground));line-height:1.6;font-style:italic;">"Perfect for agencies. We manage multiple clients here. The dashboard is clean and easy to use. Highly professional."</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESELLERS SECTION -->
+<section style="padding:8rem 1.5rem;background:hsl(var(--muted)/0.3);">
+  <div style="max-width:72rem;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <h2 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;margin-bottom:0.75rem;color:hsl(var(--foreground));text-wrap:balance;">Best SMM Panel For Resellers</h2>
+      <p style="font-size:1rem;color:hsl(var(--muted-foreground));max-width:40rem;margin:0 auto;text-wrap:balance;">Everything you need to start and grow your own SMM reselling business.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
+
+      <!-- API -->
+      <div style="background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:0.75rem;padding:1.5rem;transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent)/0.5)'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;"><i class="fas fa-code" style="color:hsl(var(--accent));font-size:1.25rem;"></i></div>
+          <h3 style="font-size:1.125rem;font-weight:600;color:hsl(var(--foreground));margin:0;">Easy API</h3>
+        </div>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;margin-bottom:0.75rem;">Simple API integration with detailed documentation. Connect your website or app in minutes.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.375rem;">
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Complete documentation</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Fast response times</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>JSON format support</li>
+        </ul>
+      </div>
+
+      <!-- Child Panel -->
+      <div style="background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:0.75rem;padding:1.5rem;transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent)/0.5)'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;"><i class="fas fa-users-cog" style="color:hsl(var(--accent));font-size:1.25rem;"></i></div>
+          <h3 style="font-size:1.125rem;font-weight:600;color:hsl(var(--foreground));margin:0;">Child Panel</h3>
+        </div>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;margin-bottom:0.75rem;">Create unlimited child panels for your customers. Full control over features and branding.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.375rem;">
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Unlimited child panels</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Custom branding options</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Full feature control</li>
+        </ul>
+      </div>
+
+      <!-- Custom Rates -->
+      <div style="background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:0.75rem;padding:1.5rem;transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent)/0.5)'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;"><i class="fas fa-sliders-h" style="color:hsl(var(--accent));font-size:1.25rem;"></i></div>
+          <h3 style="font-size:1.125rem;font-weight:600;color:hsl(var(--foreground));margin:0;">Custom Rates</h3>
+        </div>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;margin-bottom:0.75rem;">Set your own prices and profit margins. Flexible rate control for each service.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.375rem;">
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Individual service pricing</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Percentage or fixed markup</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Bulk rate updates</li>
+        </ul>
+      </div>
+
+      <!-- Priority Support -->
+      <div style="background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:0.75rem;padding:1.5rem;transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent)/0.5)'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;"><i class="fas fa-headphones-alt" style="color:hsl(var(--accent));font-size:1.25rem;"></i></div>
+          <h3 style="font-size:1.125rem;font-weight:600;color:hsl(var(--foreground));margin:0;">Priority Support</h3>
+        </div>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;margin-bottom:0.75rem;">Get faster response times and dedicated help. Priority assistance for all resellers.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.375rem;">
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Dedicated support agent</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Faster response times</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Direct communication line</li>
+        </ul>
+      </div>
+
+      <!-- Lowest Rates -->
+      <div style="background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:0.75rem;padding:1.5rem;transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent)/0.5)'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;"><i class="fas fa-piggy-bank" style="color:hsl(var(--accent));font-size:1.25rem;"></i></div>
+          <h3 style="font-size:1.125rem;font-weight:600;color:hsl(var(--foreground));margin:0;">Lowest Rates</h3>
+        </div>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;margin-bottom:0.75rem;">Get the best wholesale prices in the market. Higher profit margins for you.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.375rem;">
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Best wholesale pricing</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Volume-based discounts</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Special reseller rates</li>
+        </ul>
+      </div>
+
+      <!-- Direct Provider -->
+      <div style="background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:0.75rem;padding:1.5rem;transition:border-color 0.3s;" onmouseover="this.style.borderColor='hsl(var(--accent)/0.5)'" onmouseout="this.style.borderColor='hsl(var(--border))'">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;"><i class="fas fa-server" style="color:hsl(var(--accent));font-size:1.25rem;"></i></div>
+          <h3 style="font-size:1.125rem;font-weight:600;color:hsl(var(--foreground));margin:0;">Direct Provider</h3>
+        </div>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;margin-bottom:0.75rem;">We are direct providers, not resellers. Better quality and faster delivery.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.375rem;">
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Own service infrastructure</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>No middleman markup</li>
+          <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:hsl(var(--muted-foreground));"><i class="fas fa-check" style="color:hsl(var(--accent));font-size:0.75rem;"></i>Guaranteed quality control</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding:6rem 1.5rem;">
+  <div style="max-width:56rem;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:1rem;color:hsl(var(--foreground));text-wrap:balance;">Frequently Asked Questions</h2>
+      <p style="font-size:1.125rem;color:hsl(var(--muted-foreground));max-width:40rem;margin:0 auto;text-wrap:balance;">Find answers to common questions about SMM Panel Easy.</p>
+    </div>
+
+    <!-- Tab Buttons -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:1rem;padding:0.5rem;margin-bottom:2rem;">
+      <button class="tab-btn" aria-selected="true" onclick="switchTab('general',this)" style="padding:0.75rem 0.5rem;border:none;border-radius:0.75rem;font-size:0.875rem;font-weight:600;cursor:pointer;background:hsl(var(--accent));color:hsl(var(--accent-foreground));transition:all 0.2s;">General</button>
+      <button class="tab-btn" aria-selected="false" onclick="switchTab('payment',this)" style="padding:0.75rem 0.5rem;border:none;border-radius:0.75rem;font-size:0.875rem;font-weight:600;cursor:pointer;background:transparent;color:hsl(var(--foreground));transition:all 0.2s;">Payment</button>
+      <button class="tab-btn" aria-selected="false" onclick="switchTab('orders',this)" style="padding:0.75rem 0.5rem;border:none;border-radius:0.75rem;font-size:0.875rem;font-weight:600;cursor:pointer;background:transparent;color:hsl(var(--foreground));transition:all 0.2s;">Orders</button>
+      <button class="tab-btn" aria-selected="false" onclick="switchTab('reseller',this)" style="padding:0.75rem 0.5rem;border:none;border-radius:0.75rem;font-size:0.875rem;font-weight:600;cursor:pointer;background:transparent;color:hsl(var(--foreground));transition:all 0.2s;">Reseller</button>
+    </div>
+
+    <!-- General Tab -->
+    <div id="tab-general" class="tab-content active" style="display:flex;flex-direction:column;gap:1.5rem;">
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">What is SMM Panel Easy?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">SMM Panel Easy is a social media marketing panel that provides services like followers, likes, views, and more for all major platforms. We offer the cheapest prices with instant delivery and 24/7 support.</p>
+      </div>
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Is it safe to use?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Yes, all our services are 100% safe. We use secure methods that comply with platform guidelines. Your account safety is our top priority.</p>
+      </div>
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">How fast is the delivery?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Most orders start within seconds. Delivery time depends on the service and quantity. We aim for the fastest delivery possible while maintaining quality.</p>
+      </div>
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Do you offer refunds?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Refunds are available for services not delivered as promised. Each service has specific refund policies. Contact support if you have any issues with your order.</p>
+      </div>
+    </div>
+
+    <!-- Payment Tab -->
+    <div id="tab-payment" class="tab-content" style="display:none;flex-direction:column;gap:1.5rem;">
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">What payment methods do you accept?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">We accept all major credit cards, PayPal, Stripe, cryptocurrencies (Bitcoin, Ethereum), Apple Pay, Google Pay, and many more regional payment methods worldwide.</p>
+      </div>
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Is payment secure?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Yes, all transactions are protected with SSL encryption. We never store your payment details. All payments are processed through trusted payment gateways.</p>
+      </div>
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Is there a minimum deposit?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">The minimum deposit amount varies by payment method. Most methods have a low minimum of $1–$5 to get started easily.</p>
+      </div>
+    </div>
+
+    <!-- Orders Tab -->
+    <div id="tab-orders" class="tab-content" style="display:none;flex-direction:column;gap:1.5rem;">
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">How do I place an order?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Sign up, add funds to your account, navigate to New Order, select a service, enter your link and quantity, then confirm. Your order will start automatically.</p>
+      </div>
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Can I cancel an order?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Orders can be cancelled if they haven't started yet. Once processing begins, cancellations depend on the service type. Contact support for assistance.</p>
+      </div>
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">How do I track my order?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">After placing an order, go to your Orders page to see real-time status updates. You'll see the current count and remaining quantity for each order.</p>
+      </div>
+    </div>
+
+    <!-- Reseller Tab -->
+    <div id="tab-reseller" class="tab-content" style="display:none;flex-direction:column;gap:1.5rem;">
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">How do I become a reseller?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Simply sign up and you can start reselling immediately. Use our API to connect your own website or create a child panel with your own branding.</p>
+      </div>
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">What is a child panel?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">A child panel is your own branded SMM panel powered by our infrastructure. You can set your own prices, add your logo, and manage your own customers.</p>
+      </div>
+      <div style="padding:1.5rem;border-radius:1rem;background:hsl(var(--card));border:1px solid hsl(var(--border));">
+        <h3 style="font-size:1.125rem;font-weight:600;margin-bottom:0.75rem;color:hsl(var(--foreground));">Are there API docs available?</h3>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">Yes, full API documentation is available in your account dashboard. Our API is compatible with all major SMM panel scripts and supports JSON responses.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="padding:3rem 1.5rem;border-top:1px solid hsl(var(--border));background:hsl(var(--background));">
+  <div style="max-width:80rem;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:2rem;margin-bottom:2rem;">
+
+      <!-- Brand -->
+      <div>
+        <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;text-decoration:none;opacity:1;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="hsl(221,83%,53%)"/>
+            <path d="M8 16 L14 22 L24 10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span style="font-size:1.125rem;font-weight:700;color:hsl(var(--foreground));">SMM Panel Easy</span>
+        </a>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));line-height:1.6;">The best and cheapest SMM panel for all your social media needs.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 style="font-weight:600;margin-bottom:1rem;color:hsl(var(--foreground));">Quick Links</h4>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem;font-size:0.875rem;">
+          <li><a href="#services" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Services</a></li>
+          <li><a href="#features" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Features</a></li>
+          <li><a href="#how-it-works" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">How It Works</a></li>
+          <li><a href="#faq" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Solutions -->
+      <div>
+        <h4 style="font-weight:600;margin-bottom:1rem;color:hsl(var(--foreground));">Solutions</h4>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem;font-size:0.875rem;">
+          <li><a href="youtube-smm-panel.html" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">YouTube SMM Panel</a></li>
+          <li><a href="tiktok-smm-panel.html" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">TikTok SMM Panel</a></li>
+          <li><a href="instagram-smm-panel.html" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Instagram SMM Panel</a></li>
+          <li><a href="facebook-smm-panel.html" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Facebook SMM Panel</a></li>
+          <li><a href="telegram-smm-panel.html" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Telegram SMM Panel</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 style="font-weight:600;margin-bottom:1rem;color:hsl(var(--foreground));">Legal</h4>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem;font-size:0.875rem;">
+          <li><a href="terms.html" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Terms of Service</a></li>
+          <li><a href="privacy.html" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Privacy Policy</a></li>
+          <li><a href="refund.html" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Refund Policy</a></li>
+          <li><a href="contact.html" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 style="font-weight:600;margin-bottom:1rem;color:hsl(var(--foreground));">Contact</h4>
+        <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));margin-bottom:1rem;">Email: <a href="mailto:hello@smmpaneleasy.com" style="color:hsl(var(--muted-foreground));text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='hsl(var(--accent))'" onmouseout="this.style.color='hsl(var(--muted-foreground))'">hello@smmpaneleasy.com</a></p>
+        <div style="display:flex;gap:1rem;">
+          <a href="#" style="width:2.5rem;height:2.5rem;border-radius:50%;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;color:hsl(var(--foreground));text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='hsl(var(--accent))';this.style.color='hsl(var(--accent-foreground))'" onmouseout="this.style.background='hsl(var(--accent)/0.1)';this.style.color='hsl(var(--foreground))'"><i class="fab fa-facebook"></i></a>
+          <a href="#" style="width:2.5rem;height:2.5rem;border-radius:50%;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;color:hsl(var(--foreground));text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='hsl(var(--accent))';this.style.color='hsl(var(--accent-foreground))'" onmouseout="this.style.background='hsl(var(--accent)/0.1)';this.style.color='hsl(var(--foreground))'"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="width:2.5rem;height:2.5rem;border-radius:50%;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;color:hsl(var(--foreground));text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='hsl(var(--accent))';this.style.color='hsl(var(--accent-foreground))'" onmouseout="this.style.background='hsl(var(--accent)/0.1)';this.style.color='hsl(var(--foreground))'"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="width:2.5rem;height:2.5rem;border-radius:50%;background:hsl(var(--accent)/0.1);display:flex;align-items:center;justify-content:center;color:hsl(var(--foreground));text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='hsl(var(--accent))';this.style.color='hsl(var(--accent-foreground))'" onmouseout="this.style.background='hsl(var(--accent)/0.1)';this.style.color='hsl(var(--foreground))'"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="padding-top:2rem;border-top:1px solid hsl(var(--border));text-align:center;">
+      <p style="font-size:0.875rem;color:hsl(var(--muted-foreground));">© 2025 SMM Panel Easy. All rights reserved. Built with care for your growth.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Responsive nav display & Tab JS -->
+<style>
+  @media (min-width: 768px) {
+    .md-nav { display: flex !important; align-items: center; }
   }
-  /*$(window).scroll(function() {
-      var nav = $('#scrollNav');
-      if ($(window).scrollTop() >= 10) {
-          nav.addClass('fixedNav');
-      } else {
-          nav.removeClass('fixedNav');
-      }
-  });*/
-</script>
- <script src="js/jquery.mCustomScrollbar.min.js"></script> 
-<script type="text/javascript">
-  (function($){
-  	$(window).on("load",function(){
-  		$("#news ul").mCustomScrollbar({
-          theme:"light-thick"
-  		});
-  	});
-  })(jQuery);
-  $(function(){
-    $.get('/', function(result){
-      var newsdata = $(result).find("#news").html();
-      $("#newshere").html(newsdata);
+</style>
+<script>
+  function switchTab(tabId, btn) {
+    // Hide all tab contents
+    document.querySelectorAll('.tab-content').forEach(function(el) {
+      el.style.display = 'none';
+      el.classList.remove('active');
     });
-  });
-</script>  
+    // Deactivate all tab buttons
+    document.querySelectorAll('.tab-btn').forEach(function(b) {
+      b.style.background = 'transparent';
+      b.style.color = 'hsl(222, 47%, 11%)';
+      b.setAttribute('aria-selected', 'false');
+    });
+    // Show selected tab
+    var target = document.getElementById('tab-' + tabId);
+    if (target) {
+      target.style.display = 'flex';
+      target.classList.add('active');
+    }
+    // Activate clicked button
+    btn.style.background = 'hsl(221, 83%, 53%)';
+    btn.style.color = 'white';
+    btn.setAttribute('aria-selected', 'true');
+  }
+</script>
 
 </body>
 </html>

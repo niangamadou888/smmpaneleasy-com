@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create Account – SMM Panel Easy</title>
+  <meta name="description" content="Create a free SMM Panel Easy account and start growing your social media today." />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222 47% 11%;
+      --card: 0 0% 98%;
+      --border: 214 32% 91%;
+      --muted: 210 40% 96%;
+      --muted-foreground: 215 20% 45%;
+      --accent: 221 83% 53%;
+      --accent-foreground: 0 0% 100%;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---- HEADER ---- */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 50;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      padding: 0 1.5rem;
+      background: hsl(var(--background) / 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid hsl(var(--border));
+    }
+    .header-inner {
+      max-width: 80rem; width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      text-decoration: none;
+    }
+    .logo-link span { font-size: 1.125rem; font-weight: 700; color: hsl(var(--foreground)); }
+
+    /* ---- PAGE LAYOUT ---- */
+    .page {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+    }
+    @media (min-width: 1024px) { .page { grid-template-columns: 1fr 1fr; } }
+
+    /* ---- LEFT PANEL ---- */
+    .left-panel {
+      display: none;
+      background: linear-gradient(135deg, hsl(221 83% 53%), hsl(221 83% 38%));
+      padding: 3rem;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+    @media (min-width: 1024px) { .left-panel { display: flex; } }
+    .left-panel::before {
+      content: '';
+      position: absolute;
+      top: -6rem; right: -6rem;
+      width: 20rem; height: 20rem;
+      border-radius: 50%;
+      background: hsl(0 0% 100% / 0.05);
+    }
+    .left-panel::after {
+      content: '';
+      position: absolute;
+      bottom: -4rem; left: -4rem;
+      width: 16rem; height: 16rem;
+      border-radius: 50%;
+      background: hsl(0 0% 100% / 0.05);
+    }
+    .left-logo { display: flex; align-items: center; gap: 0.75rem; }
+    .left-logo span { font-size: 1.25rem; font-weight: 700; color: white; }
+    .left-headline { font-size: clamp(1.875rem, 3vw, 2.75rem); font-weight: 800; color: white; line-height: 1.2; margin-bottom: 1rem; }
+    .left-sub { font-size: 1rem; color: hsl(0 0% 100% / 0.75); line-height: 1.6; }
+
+    /* Benefit list */
+    .benefit-list { display: flex; flex-direction: column; gap: 0.875rem; position: relative; z-index: 1; }
+    .benefit-item { display: flex; align-items: flex-start; gap: 0.75rem; }
+    .benefit-check {
+      width: 1.5rem; height: 1.5rem; flex-shrink: 0;
+      border-radius: 50%;
+      background: hsl(0 0% 100% / 0.15);
+      display: flex; align-items: center; justify-content: center;
+      color: white;
+      font-size: 0.6875rem;
+      margin-top: 0.1rem;
+    }
+    .benefit-text { font-size: 0.9375rem; color: white; font-weight: 500; line-height: 1.4; }
+    .benefit-sub { font-size: 0.8125rem; color: hsl(0 0% 100% / 0.65); margin-top: 0.15rem; }
+
+    /* Trust badge */
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: hsl(0 0% 100% / 0.1);
+      border: 1px solid hsl(0 0% 100% / 0.2);
+      border-radius: 99px;
+      padding: 0.4rem 0.875rem;
+      font-size: 0.8125rem;
+      color: white;
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+    }
+    .trust-dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: #4ade80; }
+
+    /* ---- RIGHT PANEL ---- */
+    .right-panel {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 6rem 1.5rem 3rem;
+      overflow-y: auto;
+    }
+    .form-box { width: 100%; max-width: 28rem; }
+
+    .form-title { font-size: 1.75rem; font-weight: 800; color: hsl(var(--foreground)); margin-bottom: 0.5rem; }
+    .form-subtitle { font-size: 0.9rem; color: hsl(var(--muted-foreground)); margin-bottom: 2rem; }
+    .form-subtitle a { color: hsl(var(--accent)); text-decoration: none; font-weight: 600; }
+
+    /* ---- FORM ELEMENTS ---- */
+    .form-group { margin-bottom: 1.125rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1.125rem; }
+
+    label { display: block; font-size: 0.875rem; font-weight: 500; color: hsl(var(--foreground)); margin-bottom: 0.375rem; }
+    .input-wrap { position: relative; }
+    .input-icon {
+      position: absolute;
+      left: 0.875rem; top: 50%;
+      transform: translateY(-50%);
+      color: hsl(var(--muted-foreground));
+      font-size: 0.875rem;
+      pointer-events: none;
+    }
+    .input-eye {
+      position: absolute;
+      right: 0.875rem; top: 50%;
+      transform: translateY(-50%);
+      color: hsl(var(--muted-foreground));
+      font-size: 0.875rem;
+      cursor: pointer;
+      background: none; border: none; padding: 0;
+    }
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      height: 2.75rem;
+      border: 1px solid hsl(var(--border));
+      border-radius: 0.5rem;
+      background: hsl(var(--card));
+      color: hsl(var(--foreground));
+      font-size: 0.9rem;
+      font-family: inherit;
+      padding: 0 0.875rem 0 2.5rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    input:focus {
+      border-color: hsl(var(--accent));
+      box-shadow: 0 0 0 3px hsl(var(--accent) / 0.15);
+    }
+    input::placeholder { color: hsl(var(--muted-foreground)); }
+
+    /* Password strength */
+    .pwd-strength { margin-top: 0.5rem; }
+    .strength-bar {
+      height: 0.25rem;
+      border-radius: 99px;
+      background: hsl(var(--border));
+      overflow: hidden;
+    }
+    .strength-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: 99px;
+      background: #ef4444;
+      transition: width 0.3s, background 0.3s;
+    }
+    .strength-label { font-size: 0.75rem; color: hsl(var(--muted-foreground)); margin-top: 0.3rem; }
+
+    /* Terms checkbox */
+    .terms-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.625rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.8125rem;
+      color: hsl(var(--muted-foreground));
+      line-height: 1.5;
+    }
+    .terms-row input[type="checkbox"] {
+      width: 1rem; height: 1rem; flex-shrink: 0;
+      margin-top: 0.1rem;
+      accent-color: hsl(var(--accent));
+      padding: 0;
+    }
+    .terms-row a { color: hsl(var(--accent)); text-decoration: none; }
+
+    .btn-primary {
+      width: 100%;
+      height: 2.75rem;
+      background: hsl(var(--accent));
+      color: hsl(var(--accent-foreground));
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-primary:active { transform: scale(0.99); }
+
+    .divider {
+      display: flex; align-items: center; gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      color: hsl(var(--muted-foreground));
+      font-size: 0.8125rem;
+    }
+    .divider::before, .divider::after {
+      content: ''; flex: 1; height: 1px;
+      background: hsl(var(--border));
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn-social {
+      height: 2.5rem;
+      border: 1px solid hsl(var(--border));
+      border-radius: 0.5rem;
+      background: hsl(var(--card));
+      color: hsl(var(--foreground));
+      font-size: 0.875rem;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-social:hover { border-color: hsl(var(--accent)); background: hsl(var(--muted)); }
+
+    .page-footer-note {
+      text-align: center;
+      font-size: 0.8125rem;
+      color: hsl(var(--muted-foreground));
+    }
+    .page-footer-note a { color: hsl(var(--muted-foreground)); text-decoration: none; }
+    .page-footer-note a:hover { color: hsl(var(--accent)); }
+
+    /* Error hint */
+    .field-error { font-size: 0.8rem; color: #ef4444; margin-top: 0.3rem; display: none; }
+    input.error { border-color: #ef4444; }
+    input.error:focus { box-shadow: 0 0 0 3px hsl(0 84% 60% / 0.15); }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+        <rect width="32" height="32" rx="8" fill="hsl(221,83%,53%)"/>
+        <path d="M8 16 L14 22 L24 10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>SMM Panel Easy</span>
+    </a>
+    <div style="font-size:0.875rem;color:hsl(var(--muted-foreground));">
+      Already have an account? <a href="login.html" style="color:hsl(var(--accent));font-weight:600;text-decoration:none;">Sign in</a>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<div class="page">
+
+  <!-- LEFT BRANDING PANEL -->
+  <div class="left-panel">
+
+    <div style="position:relative;z-index:1;padding-top:3rem;">
+      <p class="left-headline">Start growing<br/>your social media<br/>today.</p>
+      <p class="left-sub">Join thousands of creators, agencies, and resellers who trust SMM Panel Easy for instant, affordable growth.</p>
+    </div>
+
+    <div class="benefit-list">
+      <div class="benefit-item">
+        <div class="benefit-check"><i class="fas fa-check" style="font-size:0.625rem;"></i></div>
+        <div>
+          <div class="benefit-text">Free to sign up — no credit card needed</div>
+          <div class="benefit-sub">Get started in under 60 seconds</div>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-check"><i class="fas fa-check" style="font-size:0.625rem;"></i></div>
+        <div>
+          <div class="benefit-text">Access 10,000+ SMM services instantly</div>
+          <div class="benefit-sub">Instagram, TikTok, YouTube &amp; more</div>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-check"><i class="fas fa-check" style="font-size:0.625rem;"></i></div>
+        <div>
+          <div class="benefit-text">Resell with your own child panel</div>
+          <div class="benefit-sub">Set custom prices and keep the profit</div>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-check"><i class="fas fa-check" style="font-size:0.625rem;"></i></div>
+        <div>
+          <div class="benefit-text">API access included from day one</div>
+          <div class="benefit-sub">Automate orders with full documentation</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-badge">
+      <div class="trust-dot"></div>
+      Trusted by 50,000+ users worldwide
+    </div>
+  </div>
+
+  <!-- RIGHT FORM PANEL -->
+  <div class="right-panel">
+    <div class="form-box">
+
+      <h1 class="form-title">Create your account</h1>
+      <p class="form-subtitle">Already have an account? <a href="login.html">Sign in here</a></p>
+
+      <form action="#" method="post" novalidate onsubmit="handleRegister(event)">
+
+        <!-- Name row -->
+        <div class="form-row">
+          <div>
+            <label for="first-name">First name</label>
+            <div class="input-wrap">
+              <i class="fas fa-user input-icon"></i>
+              <input type="text" id="first-name" name="first_name" placeholder="John" autocomplete="given-name" required />
+            </div>
+            <div class="field-error" id="err-first">Required.</div>
+          </div>
+          <div>
+            <label for="last-name">Last name</label>
+            <div class="input-wrap">
+              <i class="fas fa-user input-icon"></i>
+              <input type="text" id="last-name" name="last_name" placeholder="Doe" autocomplete="family-name" required />
+            </div>
+            <div class="field-error" id="err-last">Required.</div>
+          </div>
+        </div>
+
+        <!-- Username -->
+        <div class="form-group">
+          <label for="username">Username</label>
+          <div class="input-wrap">
+            <i class="fas fa-at input-icon"></i>
+            <input type="text" id="username" name="username" placeholder="johndoe" autocomplete="username" required />
+          </div>
+          <div class="field-error" id="err-username">Username must be at least 3 characters.</div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <div class="input-wrap">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          </div>
+          <div class="field-error" id="err-email">Enter a valid email address.</div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" id="password" name="password" placeholder="Min. 8 characters" autocomplete="new-password" required oninput="checkStrength(this.value)" />
+            <button type="button" class="input-eye" onclick="togglePwd('password','eye1')" aria-label="Toggle password">
+              <i id="eye1" class="fas fa-eye"></i>
+            </button>
+          </div>
+          <div class="pwd-strength">
+            <div class="strength-bar"><div class="strength-fill" id="strength-fill"></div></div>
+            <div class="strength-label" id="strength-label">Enter a password</div>
+          </div>
+          <div class="field-error" id="err-password">Password must be at least 8 characters.</div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="password-confirm">Confirm password</label>
+          <div class="input-wrap">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" id="password-confirm" name="password_confirm" placeholder="Repeat your password" autocomplete="new-password" required />
+            <button type="button" class="input-eye" onclick="togglePwd('password-confirm','eye2')" aria-label="Toggle confirm password">
+              <i id="eye2" class="fas fa-eye"></i>
+            </button>
+          </div>
+          <div class="field-error" id="err-confirm">Passwords do not match.</div>
+        </div>
+
+        <!-- Referral (optional) -->
+        <div class="form-group">
+          <label for="referral">Referral code <span style="color:hsl(var(--muted-foreground));font-weight:400;">(optional)</span></label>
+          <div class="input-wrap">
+            <i class="fas fa-gift input-icon"></i>
+            <input type="text" id="referral" name="referral" placeholder="Enter referral code" />
+          </div>
+        </div>
+
+        <!-- Terms -->
+        <label class="terms-row">
+          <input type="checkbox" id="agree" name="agree" required />
+          <span>I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>. I confirm I am at least 18 years old.</span>
+        </label>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-primary">
+          <i class="fas fa-user-plus"></i> Create Free Account
+        </button>
+
+      </form>
+
+      <!-- Divider -->
+      <div class="divider">or sign up with</div>
+
+      <!-- Social Register -->
+      <div class="social-grid">
+        <button class="btn-social" type="button">
+          <svg width="18" height="18" viewBox="0 0 18 18"><path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.875 2.684-6.615z" fill="#4285F4"/><path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z" fill="#34A853"/><path d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill="#FBBC05"/><path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335"/></svg>
+          Google
+        </button>
+        <button class="btn-social" type="button">
+          <i class="fab fa-telegram" style="color:#3b82f6;font-size:1rem;"></i>
+          Telegram
+        </button>
+      </div>
+
+      <p class="page-footer-note">
+        Already have an account? <a href="login.html" style="color:hsl(var(--accent));font-weight:600;">Sign in</a>
+      </p>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+  /* Toggle password visibility */
+  function togglePwd(inputId, iconId) {
+    var inp = document.getElementById(inputId);
+    var ico = document.getElementById(iconId);
+    inp.type = inp.type === 'password' ? 'text' : 'password';
+    ico.classList.toggle('fa-eye');
+    ico.classList.toggle('fa-eye-slash');
+  }
+
+  /* Password strength meter */
+  function checkStrength(val) {
+    var fill  = document.getElementById('strength-fill');
+    var label = document.getElementById('strength-label');
+    var score = 0;
+    if (val.length >= 8)  score++;
+    if (/[A-Z]/.test(val)) score++;
+    if (/[0-9]/.test(val)) score++;
+    if (/[^A-Za-z0-9]/.test(val)) score++;
+
+    var colors = ['#ef4444', '#f97316', '#eab308', '#22c55e'];
+    var labels = ['Weak', 'Fair', 'Good', 'Strong'];
+    var widths = ['25%', '50%', '75%', '100%'];
+
+    if (val.length === 0) {
+      fill.style.width  = '0%';
+      label.textContent = 'Enter a password';
+      label.style.color = 'hsl(var(--muted-foreground))';
+    } else {
+      var idx = Math.max(0, score - 1);
+      fill.style.width      = widths[idx];
+      fill.style.background = colors[idx];
+      label.textContent     = labels[idx];
+      label.style.color     = colors[idx];
+    }
+  }
+
+  /* Show/hide field error */
+  function showError(id, show) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.style.display = show ? 'block' : 'none';
+  }
+
+  /* Form validation & submit */
+  function handleRegister(e) {
+    e.preventDefault();
+    var ok = true;
+
+    var fn = document.getElementById('first-name');
+    if (!fn.value.trim()) { fn.classList.add('error'); showError('err-first', true); ok = false; }
+    else { fn.classList.remove('error'); showError('err-first', false); }
+
+    var ln = document.getElementById('last-name');
+    if (!ln.value.trim()) { ln.classList.add('error'); showError('err-last', true); ok = false; }
+    else { ln.classList.remove('error'); showError('err-last', false); }
+
+    var un = document.getElementById('username');
+    if (un.value.trim().length < 3) { un.classList.add('error'); showError('err-username', true); ok = false; }
+    else { un.classList.remove('error'); showError('err-username', false); }
+
+    var em = document.getElementById('email');
+    var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRe.test(em.value.trim())) { em.classList.add('error'); showError('err-email', true); ok = false; }
+    else { em.classList.remove('error'); showError('err-email', false); }
+
+    var pw  = document.getElementById('password');
+    if (pw.value.length < 8) { pw.classList.add('error'); showError('err-password', true); ok = false; }
+    else { pw.classList.remove('error'); showError('err-password', false); }
+
+    var pc  = document.getElementById('password-confirm');
+    if (pc.value !== pw.value || pc.value === '') { pc.classList.add('error'); showError('err-confirm', true); ok = false; }
+    else { pc.classList.remove('error'); showError('err-confirm', false); }
+
+    var ag = document.getElementById('agree');
+    if (!ag.checked) { ok = false; ag.style.outline = '2px solid #ef4444'; }
+    else { ag.style.outline = ''; }
+
+    if (!ok) return;
+
+    var btn = e.target.querySelector('.btn-primary');
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating account…';
+    btn.disabled = true;
+
+    // Replace with real registration logic
+    setTimeout(function() {
+      btn.innerHTML = '<i class="fas fa-check"></i> Account created!';
+      btn.style.background = '#22c55e';
+      setTimeout(function() {
+        window.location.href = 'login.html';
+      }, 1200);
+    }, 2000);
+  }
+</script>
+
+</body>
+</html>
